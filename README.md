@@ -1,4 +1,4 @@
 catchoom-sdk-ios
 ================
 
-Catchoom SDK and example apps for iOS
+Catchoom mobile sdk and example apps for iOS
