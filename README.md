@@ -1,4 +1,3 @@
-
 - [Catchoom iOS SDK Example](#catchoom-ios-sdk-example)
 	- [Description](#description)
 	- [Requirements](#requirements)
@@ -7,7 +6,7 @@
 	- [Adding the SDK to your app](#adding-the-sdk-to-your-app)
 	- [Reporting Issues](#reporting-issues)
 
-Catchoom iOS SDK Example
+Catchoom example for iOS
 ========================
 
 
