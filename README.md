@@ -21,8 +21,8 @@ The integration is as simple as importing the compiled SDK into your project and
 
 You can implement one of the two different modes of Image Recognition:
 
-* Single shot mode, where users initiate every recognition request (e.g. by pressing a button).
-* Finder mode, allowing continuous scan and automatic recognition of all objects appearing in front of the camera.
+* **Single shot mode**, where users initiate every recognition request (e.g. by pressing a button).
+* **Finder mode**, allowing continuous scan and automatic recognition of all objects appearing in front of the camera.
 
 More specifically, the SDK implements the following features:
 
@@ -37,9 +37,11 @@ To build the project or use the library, you will need XCode 4.6 or newer, and a
 
 Quick Start
 -----------
-The **easiest** way to get started with the Catchoom SDK is downloading this project from, and trying the example application with your images from the [CRS](http://crs.catchoom.com). The example app includes a compiled version of the **RestKit** framework and all dependencies are already added to the project. 
+The **easiest** way to get started with the Catchoom SDK is downloading this project, and trying the example application with your images from the [CRS](http://crs.catchoom.com). The example app includes a compiled version of the **RestKit** framework and all dependencies are already added to the project. 
 
-To get the **CatchoomSDK framework**, please [contact us](http://catchoom.com/contact/?message=Hi%20Catchoom,%0D%0DI%20am%20interested%20in%20getting%20the%20Catchoom%20SDK%20for%20iOS%20version%201.0.) and we will send you the latest version. In order to get it running you just have to follow three steps:
+To get the **CatchoomSDK framework**, please [contact us](http://catchoom.com/contact/?message=Hi%20Catchoom,%0D%0DI%20am%20interested%20in%20getting%20the%20Catchoom%20SDK%20for%20iOS%20version%201.0.) and we will send you the latest version.
+
+In order to get the example running you just have to follow three simple steps:
 
 1. Clone this repository
 2. Get the [Catchoom SDK for iOS](http://catchoom.com/contact/?message=Hi%20Catchoom,%0D%0DI%20am%20interested%20in%20getting%20the%20Catchoom%20SDK%20for%20iOS%20version%201.0.) and unzip it into the ExternalFrameworks directory.
@@ -50,16 +52,18 @@ To get the **CatchoomSDK framework**, please [contact us](http://catchoom.com/co
   [_sdk setDefaultCollectionToken: PLACE_YOUR_CRS_TOKEN_HERE];
   ```
 
-This should be enough to compile the project and start [recognising things](http://catchoom.com/documentation/what-kind-of-objects-do-we-recognize/).
+This is enough to compile the project and start [recognising things](http://catchoom.com/documentation/what-kind-of-objects-do-we-recognize/).
 
 Example App
 -----------
 This project shows two examples of how to use the Catchoom SDK to recognise images and objects from the device camera:
 
-* **Single shot**: take a picture from the camera and send it to the CRS to obtain a response with the recognised object.
-* **Finder mode** or continuous search: Take video frames from the camera periodically and send them to the CRS, when a match is found, the result is displayed and the scan is stopped.
+* **Single shot**: takes a picture from the camera and sends it to the CRS to obtain a response with the recognised object.
+* **Finder mode** or continuous search: Takes video frames from the camera periodically and sends them to the CRS. When a match is found, the result is displayed and the scanning stopps.
 
-Just by adding a few lines in your application, you can enable it to show a camera preview and search by taking a picture or capturing video frames from the camera. In this case we show the example for the **Single shot** mode.
+Just by adding a few lines in your application, you can show a camera preview and search by taking a picture or capturing video frames from the camera.
+
+In this case we show the example for the **Single shot** mode.
 
 First you have to initialise the SDK and retrieve the **CloudRecognition** instance:
 
@@ -92,7 +96,7 @@ Once the video capture has been initialised, you are ready to take a photo and s
 }
 ```
 
-The SDK connects through the CRS API and translates the results for you encapsulating them in an easy to access class:
+The SDK connects through the CRS API and parses the results encapsulating them in an easy to access class:
 
 ```objc
 @property (nonatomic) NSString *itemId;
@@ -107,7 +111,7 @@ The SDK connects through the CRS API and translates the results for you encapsul
 
 ```
 
-The code for both examples can be found in this project under the `catchoom-sdk-sampleapp/CloudRecognition` directory. To switch from the **Single Shot** mode example to the continuous one, change the commented line in the ```SplashScreenViewController.m``` file:
+The code for both examples can be found in this project under the `catchoom-sdk-sampleapp/CloudRecognition` directory. To switch from the **Single shot mode** example to the **Finder mode**, change the commented line in the ```SplashScreenViewController.m``` file:
 
 ```objc
     // FINDER MODE
@@ -138,7 +142,7 @@ The iOS Catchoom SDK is distributed as a .framework that you can directly drag i
 
 It also depends on RestKit v0.20.3 and its dependencies.
 
-There are also some flags which need to be added to your project in order to link the application properly due to some [know issues](https://developer.apple.com/library/mac/qa/qa1490/_index.html) with xCode related to the use of categories in static libraries:
+Also, you will need to add some flags to your project in order to link the application properly due to [know issues](https://developer.apple.com/library/mac/qa/qa1490/_index.html) with xCode related to the use of categories in static libraries:
 
 ```
 -Objc -all_load
