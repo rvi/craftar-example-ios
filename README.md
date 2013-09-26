@@ -63,7 +63,7 @@ This project shows two examples of how to use the Catchoom SDK to recognise imag
 
 Just by adding a few lines in your application, you can show a camera preview and search by taking a picture or capturing video frames from the camera.
 
-In this case we show the example for the **Single shot** mode.
+In this case we show the example for the **single shot** mode.
 
 First you have to initialise the SDK and retrieve the **CloudRecognition** instance:
 
@@ -111,7 +111,7 @@ The SDK connects through the CRS API and parses the results encapsulating them i
 
 ```
 
-The code for both examples can be found in this project under the `catchoom-sdk-sampleapp/CloudRecognition` directory. To switch from the **Single shot mode** example to the **Finder mode**, change the commented line in the ```SplashScreenViewController.m``` file:
+The code for both examples can be found in this project under the `catchoom-sdk-sampleapp/CloudRecognition` directory. To switch from the **single shot mode** example to the **finder mode**, change the commented line in the ```SplashScreenViewController.m``` file:
 
 ```objc
     // FINDER MODE
