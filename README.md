@@ -161,7 +161,7 @@ Also, you will need to add some flags to your project in order to link the appli
 -Objc -all_load
 ```
 
-Then you just have to create a view in your starboards and link it to a UIView IBOutlet for the camera preview. Pass the preview to the catchoom's SDK ```startVideoForView:``` message and use one of the methods in the examples to send images to the CRS shown in the examples.
+Then you just have to create a view in your starboards and link it to a UIView IBOutlet for the camera preview. Pass the preview to the catchoom's SDK ```startVideoForView:``` message and use one of the methods shown in the examples to send images to the CRS.
 
 
 Reporting Issues
