@@ -142,7 +142,7 @@ The iOS Catchoom SDK is distributed as a .framework that you can directly drag i
 
 It also depends on RestKit v0.20.3 and its dependencies.
 
-Also, you will need to add some flags to your project in order to link the application properly due to [know issues](https://developer.apple.com/library/mac/qa/qa1490/_index.html) with xCode related to the use of categories in static libraries:
+Also, you will need to add some flags to your project in order to link the application properly due to [known issues](https://developer.apple.com/library/mac/qa/qa1490/_index.html) with xCode related to the use of categories in static libraries:
 
 ```
 -Objc -all_load
