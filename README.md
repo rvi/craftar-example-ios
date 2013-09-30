@@ -140,7 +140,20 @@ The iOS Catchoom SDK is distributed as a .framework that you can directly drag i
 * Security
 * CFNetwork
 
-It also depends on RestKit v0.20.3 and its dependencies.
+It also depends on RestKit v0.20.3 and its [dependencies](https://github.com/RestKit/RestKit):
+
+```md
+The following Cocoa frameworks must be linked into the application target for proper compilation:
+
+CFNetwork.framework on iOS
+CoreData.framework
+Security.framework
+MobileCoreServices.framework on iOS or CoreServices.framework on OS X
+And the following linker flags must be set:
+
+-ObjC
+-all_load
+```
 
 Also, you will need to add some flags to your project in order to link the application properly due to [known issues](https://developer.apple.com/library/mac/qa/qa1490/_index.html) with xCode related to the use of categories in static libraries:
 
