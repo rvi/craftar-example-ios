@@ -32,7 +32,7 @@ More specifically, the SDK implements the following features:
 
 Requirements
 ------------
-To build the project or use the library, you will need XCode 4.6 or newer, and at least the iOS 5.0 library.
+To build the project or use the library, you will need xCode 5 or newer, and at least the iOS 5.0 library.
 
 
 Quick Start
@@ -121,7 +121,15 @@ The code for both examples can be found in this project under the `catchoom-sdk-
     target = (UIViewController *)[exampleStoryBoard instantiateViewControllerWithIdentifier:@"CloudRecognitionSnapPhoto"];
 ```
 
+In order to retrieve the custom field or the bounding boxes for the item, the CloudRecognition class needs to be configured to ask for them:
 
+```objc
+// for the custom field
+_crs.retrieveCustomField = YES;
+
+// for the bounding boxes
+_crs.retrieveBoundingBox = YES;
+```
 
 Adding the SDK to your app
 --------------------------
