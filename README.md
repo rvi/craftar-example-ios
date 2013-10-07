@@ -39,12 +39,12 @@ Quick Start
 -----------
 The **easiest** way to get started with the Catchoom SDK is downloading this project, and trying the example application with your images from the [CRS](http://crs.catchoom.com). The example app includes a compiled version of the **RestKit** framework and all dependencies are already added to the project. 
 
-To get the **CatchoomSDK framework**, please [contact us](http://catchoom.com/contact/?message=Hi%20Catchoom,%0D%0DI%20am%20interested%20in%20getting%20the%20Catchoom%20SDK%20for%20iOS%20version%201.0.) and we will send you the latest version.
+To get the **CatchoomSDK framework**, please [contact us](http://catchoom.com/developer/sdk/) and we will send you the latest version.
 
 In order to get the example running you just have to follow three simple steps:
 
 1. Clone this repository
-2. Get the [Catchoom SDK for iOS](http://catchoom.com/contact/?message=Hi%20Catchoom,%0D%0DI%20am%20interested%20in%20getting%20the%20Catchoom%20SDK%20for%20iOS%20version%201.0.) and unzip it into the ExternalFrameworks directory.
+2. Get the [Catchoom SDK for iOS](http://catchoom.com/developer/sdk/) and unzip it into the ExternalFrameworks directory.
 3. Get a collection token and add it as a string literal in the sdk call:
 
  
