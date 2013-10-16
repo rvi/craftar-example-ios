@@ -3,6 +3,7 @@
 	- [Requirements](#requirements)
 	- [Quick Start](#quick-start)
 	- [Example App](#example-app)
+	- [Using your own server as a proxy](#using-your-own-server-as-a-proxy)
 	- [Adding the SDK to your app](#adding-the-sdk-to-your-app)
 	- [Reporting Issues](#reporting-issues)
 
@@ -129,6 +130,79 @@ _crs.retrieveCustomField = YES;
 
 // for the bounding boxes
 _crs.retrieveBoundingBox = YES;
+```
+
+Using your own server as a proxy
+---------------------------------
+
+Do you need extra control when implementing the backend application logic? 
+If yes, consider configuring the SDK to interact with your own backend acting 
+as a proxy server instead of communicating directly with the CRS. 
+
+To do this, you just have to extend the provided ```CatchoomCloudRecognitionAPI``` class
+and override the ```getCloudRecognitionUrl``` message to point to your own server:
+
+```objc
+#import <CatchoomSDK/CatchoomCloudRecognitionAPI.h>
+
+// Custom API class to call our proxy server
+
+@interface CatchoomCloudRecognitionAPIProxy : CatchoomCloudRecognitionAPI
++ (NSString*) getCloudRecognitionUrl;
+@end
+
+@implementation CatchoomCloudRecognitionAPIProxy
+
++ (NSString*) getCloudRecognitionUrl {
+    return @"http://url-to-my-proxy-server"
+}
+
+@end
+```
+
+And indicate the **CatchoomSDK** class to use your API class instead of the default one:
+
+```objc
+    _sdk = [CatchoomSDK sharedCatchoomSDKWithCRSAPI:CatchoomCloudRecognitionAPIProxy.class];
+```
+
+If you use a proxy you can add extended fields to your items. But be careful. Our CRS recognition API returns a JSON object with a given structure. Your server MUST return a JSON object with the same structure (including your extended fields), otherwise the SDK will not be able to decode the responses. If you want to extend your items, you have to extend the 
+```CatchoomCloudRecognitionItem``` class to add your fields and custom parsing of the JSON object:
+
+```objc
+@interface MyCustomItem : CatchoomCloudRecognitionItem {
+NSString * my_custom_field
+}
+@end
+
+@implementation
+- (id) initWithJSONResult: (id) obj {
+    self = [super initWithJSONResult: obj];
+    if (self != nil) {
+    	// PARSE YOUR CUSTOM EXTENDED FIELDS HERE
+    	my_custom_field = ... obj...
+    }
+    return self
+}
+...
+@end
+```
+
+Finally you also need to indicate the SDK to use your custom Item when parsing the results from the CRS queries. To do this, just assign your class to the ```cloudRecognitionItemClass``` property of the SDK's CloudRecognitionInterface:
+```objc
+    _crs = [_sdk getCloudRecognitionInterface];
+    _crs.delegate = self;
+    ...
+    _crs.cloudRecognitionItemClass = MyCustomItem.class; // ADD THIS LINE
+    ...
+```
+
+Now, whenever you get a result from the SDK, the ```resultItems``` array will contain a list of items of your class:
+```objc
+- (void) didGetSearchResults:(NSArray *)resultItems {
+    MyCustomItem *item = [resultItems objectAtIndex:0];
+    // you can use your custom items and access the fields you added
+}
 ```
 
 Adding the SDK to your app
