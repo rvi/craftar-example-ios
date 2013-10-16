@@ -205,6 +205,29 @@ Now, whenever you get a result from the SDK, the ```resultItems``` array will co
 }
 ```
 
+
+For more advanced features like sending additional parameters to your server in the calls, you can override the whole
+```CatchoomCloudRecognitionAPI``` class implementation but remember to call all callbacks from the ```CatchoomSearchProtocol``` described below, 
+and passing a JSON that the SDK is able to parse:
+```objc
+
+@protocol CatchoomSearchProtocol <NSObject>
+
+@optional
+
+// delegate answer for connect callback. the return object is a JSON with the information of the
+// connection status
+- (void)didReceiveConnectResponse:(id)response withCode: (int) statusCode;
+
+// delegate answer for the Search callback. The response object is a JSON object with the CRS service response.
+- (void)didReceiveServerSearchResponse:(id)response withCode: (int) statusCode;
+
+// delegate answer if server call fails
+- (void)didFailLoadWithError:(NSError *)error;
+
+@end
+```
+
 Adding the SDK to your app
 --------------------------
 
