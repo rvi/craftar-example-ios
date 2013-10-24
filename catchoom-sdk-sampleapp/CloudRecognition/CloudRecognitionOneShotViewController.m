@@ -66,7 +66,7 @@
 - (IBAction)snapPhotoToSearch:(id)sender {
     _foundItem = nil;
     self._initialOverlay.hidden = YES;
-    [_sdk takePreviewSnapShot];
+    [_sdk takeSnapShot];
 }
 
 - (void) didGetSnapshotFromPreview:(UIImage *)snapShot {

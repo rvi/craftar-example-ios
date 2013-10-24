@@ -87,7 +87,7 @@ Once the video capture has been initialised, you are ready to take a photo and s
 - (IBAction)snapPhotoToSearch:(id)sender {
     _foundItem = nil;
     self._initialOverlay.hidden = YES;
-    [_sdk takePreviewSnapShot];
+    [_sdk takeSnapShot];
 }
 
 - (void) didGetSnapshotFromPreview:(UIImage *)snapShot {
