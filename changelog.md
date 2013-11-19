@@ -3,6 +3,9 @@ Changelog
 
 ### Catchoom SDK
 
+###### CRS_SDK 1.2.1
+* Added option to set the maximum number of searches per second on finder mode.
+
 ###### CRS_SDK 1.2
 * Fixed bug with Single Shot mode capturing dark images
 * Fixed bug when retrieving custom field.
