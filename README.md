@@ -1,30 +1,7 @@
-Catchoom Mobile SDK v1.0 Specifications
-
-* * * * *
-
 ![](images/image04.png)
 
-Mobile SDK v1.0 Specifications
 
-Authors: Luis Martinell, David Marimon and Tomasz Adamek
-
-Last update: Jan  2014
-
-Doc Version: 1.2
-
-Catchoom Technologies S.L. - ESB65674590
-
-Llacuna 162, 08018 Barcelona, Spain
-
-support@catchoom.com | [http://catchoom.com](http://catchoom.com)
-
-Catchoom Confidential and Proprietary
-
-Restricted Distribution: Not to be used, copied, reproduced in whole or
-in part, nor its contents revealed in any manner to others without the
-express written permission of Catchoom.
-
-* * * * *
+# CraftAR Mobile SDK
 
 Table of Contents
 
