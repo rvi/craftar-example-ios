@@ -5,55 +5,51 @@
 
 Table of Contents
 
-[1. Introduction](#h.4c8ynw88ul0s)
+[1. Introduction](#1-introduction)
 
-[1.1 Terminology](#h.82x73k2rbsh0)
+[1.1 Terminology](#11-terminology)
 
-[2. Features](#h.k184x2h0bwnh)
+[2. Features](#2-features)
 
-[3. Platforms](#h.jv30b0axjk1e)
+[3. Platforms](#3-platforms)
 
-[4. SDK architecture](#h.aj4hsg1id7gi)
+[4. SDK architecture](#4-sdk-architecture)
 
-[5. SDK integration](#h.1ac91k3jh68w)
+[5. SDK integration](#5-sdk-integration)
 
-[5.1 Examples app](#h.ti7ruoeoebpc)
+[5.1 Examples app](#51-examples-app)
 
-[5.2 Integration on iOS native apps](#h.djblojmpyxxl)
+[5.2 Integration on iOS native apps](#52-integration-on-ios-native-apps)
 
-[Requirements](#h.gx9gu3fx0mgq)
+[Requirements](#requirements)
 
-[Quick Start](#h.vxdkbjjek0hw)
+[Quick Start](#quick-start)
 
-[Adding the SDK to your app](#h.kpl0m7jxksnx)
+[Adding the SDK to your app](#adding-the-sdk-to-your-app)
 
-[Creating your first app](#h.8axd08vzl8uo)
+[Creating your first app](#creating-your-first-app)
 
-[6. SDK Documentation](#h.5zpbry3nlef4)
+[6. SDK Documentation](#6-sdk-documentation)
 
-[7. Frequently Asked Questions](#h.syhlgd1xa1v6)
+[7. Frequently Asked Questions](#7-frequently-asked-questions)
 
 [Can I add a proxy server between the Catchoom CRS and my
-app?](#h.d3l7ie7bhzj6)
+app?](#can-i-add-a-proxy-server-between-the-catchoom-crs-and-my-app)
 
 [Can I limit the number of searches per second during continuous
-scan?](#h.3mau13qd8n13)
+scan?](#can-i-limit-the-number-of-searches-per-second-during-continuous-scan)
 
-[Can I run the app in the simulator?](#h.oswo4gqvnc7t)
+[Can I run the app in the simulator?](#can-i-run-the-app-in-the-simulator)
 
-[Should/Can I call [\_tracking startTracking]; if it has already been
+[Should/Can I call [_tracking startTracking]; if it has already been
 called once? Does it continue tracking or it stops and starts? Will the
-videoplayback restart or continue?](#h.py44x5bbgvzv)
+videoplayback restart or continue?](#shouldcan-i-call_tracking-starttrackingif-it-has-already-been-called-once-does-it-continue-tracking-or-it-stops-and-starts-will-the-videoplayback-restart-or-continue)
 
-[Can I run Finder Mode and tracking simultaneously?](#h.4oejrktrsued)
-
- {.c3 .c23 .c24}
+[Can I run Finder Mode and tracking simultaneously?](#can-i-run-finder-mode-and-tracking-simultaneously)
 
 * * * * *
 
- {.c3 .c24 .c23}
-
-1. Introduction {.c3 .c23}
+1. Introduction
 ===============
 
 Catchoom allows to create recognition only and Augmented Reality (AR)
@@ -70,7 +66,7 @@ This document describes mainly the Mobile SDK when used for AR. The
 documentation for recognition only experiences is already available in
 http://catchoom.com/documentation.
 
-1.1 Terminology {.c3 .c23}
+1.1 Terminology
 ---------------
 
 The following is a list of concepts that are used in this document.
@@ -102,7 +98,7 @@ The following is a list of concepts that are used in this document.
 -   Tracking data: file that stores visual features to track the object
     in 3D.
 
-2. Features {.c3 .c23}
+2. Features
 ===========
 
 The Mobile SDK provides the following features:
@@ -124,13 +120,13 @@ The Mobile SDK provides the following features:
 -   AR content type extension: ability to extend programmatically the
     built-in contents with ad hoc content types.
 
-3. Platforms {.c3 .c23}
+3. Platforms
 ============
 
 The Catchoom SDK is currently provided only for iOS. An Android version
 will be coming soon.
 
-4. SDK architecture {.c7 .c3}
+4. SDK architecture
 ===================
 
 The Catchoom SDK is structured in a modular way that allows the
@@ -143,64 +139,32 @@ different modules involved.
 
 [](#)[](#)
 
-+--------------------------------------+--------------------------------------+
 | Classes                              | Functionality                        |
-+--------------------------------------+--------------------------------------+
-| CatchoomSDK                          | Main interface that manages the      |
-|                                      | video capture and the rendering.     |
-+--------------------------------------+--------------------------------------+
-| Video capture                        | Takes control over the camera and    |
-|                                      | allows to attach the search and      |
-|                                      | tracking modules to process the      |
-|                                      | video frames.                        |
-+--------------------------------------+--------------------------------------+
-| CloudRecognition                     | Connects to the CRSConnect to        |
-|                                      | perform image recognition queries.   |
-|                                      | This module allows to search with    |
-|                                      | images from the video capture in two |
-|                                      | modes:                               |
-|                                      |                                      |
-|                                      | -   Finder Mode: Send video frames   |
-|                                      |     to the CRS as they are received  |
-|                                      |     from the video capture.          |
-|                                      | -   Single shot: Take a picture and  |
-|                                      |     send it to the CRS.              |
-|                                      |                                      |
-|                                      | This module handles the CRS response |
-|                                      | and provides the resulting items in  |
-|                                      | an easy to access class.             |
-|                                      |                                      |
-|                                      | Items can be extended to parse       |
-|                                      | custom fields.                       |
-+--------------------------------------+--------------------------------------+
-| CRSConnect                           | Manages network calls to the Cloud   |
-|                                      | Recognition Service API. Can be      |
-|                                      | extended to use a proxy server and   |
-|                                      | custom parsing of the responses.     |
-+--------------------------------------+--------------------------------------+
+|--------------------------------------|--------------------------------------|
+| CatchoomSDK                          | Main interface that manages the video capture and the rendering.|
+| | |
+| Video capture                        | Takes control over the camera and allows to attach the search and tracking modules to process the video frames.  |
+| | |
+| CloudRecognition                     | Connects to the CRSConnect to perform image recognition queries.|
+|| This module allows to search with images from the video capture in two modes:|
+||- Finder Mode: Send video frames to the CRS as they are received from the video capture.|
+||- Single shot: Take a picture and send it to the CRS.              |
+||This module handles the CRS response and provides the resulting items in an easy to access class.      |       
+||Items can be extended to parse custom fields.                       |
+| | |
+| CRSConnect                           | Manages network calls to the Cloud Recognition Service API. Can be extended to use a proxy server and custom parsing of the responses.     |
+| | |
 | CatchoomTracking                     | Manages the augmentation process:    |
-|                                      |                                      |
-|                                      | -   Manages AR items: Add/remove     |
-|                                      |     images (AR items) that will be   |
-|                                      |     used as the patterns to detect   |
-|                                      |     and augment for the AR           |
-|                                      |     experiences.                     |
-|                                      | -   Manages AR content: To be drawn  |
-|                                      |     on top of the item image when    |
-|                                      |     detected in the video capture.   |
-|                                      | -   Tracking: Processing of video    |
-|                                      |     frames for 3D object tracking.   |
-+--------------------------------------+--------------------------------------+
-| CatchomRenderer                      | Draw the camera preview and          |
-|                                      | different types of AR content in the |
-|                                      | AR view:                             |
-|                                      |                                      |
-|                                      | -   Image                            |
-|                                      | -   Videos                           |
-|                                      | -   Image buttons                    |
-+--------------------------------------+--------------------------------------+
+|                                      | -   Manages AR items: Add/remove images (AR items) that will be used as the patterns to detect and augment for the AR experiences.                     |
+|                                      | -   Manages AR content: To be drawn on top of the item image when detected in the video capture.   |
+|                                      | -   Tracking: Processing of video frames for 3D object tracking.   |
+| | |
+| CatchomRenderer                      | Draw the camera preview and different types of AR content in the AR view: |
+| | -   Image                            |
+| | -   Videos                           |
+| | -   Image buttons                    |
 
-5. SDK integration {.c7 .c3}
+5. SDK integration
 ==================
 
 Steps for integrating your mobile app with Catchoom and create cool AR
@@ -216,7 +180,7 @@ Also you can test our example app and see how we integrated the SDK.
 Note that the CatchoomSDK.framework takes over 127 MB of disk space, but
 in your app this will only add around 2MB.
 
-5.1 Examples app {.c7 .c3}
+5.1 Examples app
 ----------------
 
 The SDK distribution comes with an xCode project of an application with
@@ -227,27 +191,27 @@ the scene description.
 
 To run the examples follow these steps:
 
-1.  Open the CatchoomSDK\_Examples.xcodeproj project.
+1.  Open the CatchoomSDK_Examples.xcodeproj project.
 2.  Select an iOS 6 or 7 device (Notice that the project will not
     compile for the simulator).
 3.  Hit the run button.
 
-5.2 Integration on iOS native apps {.c7 .c3}
+5.2 Integration on iOS native apps
 ----------------------------------
 
-### Requirements {.c7 .c3}
+### Requirements
 
 To build the project or use the library, you will need XCode 5 or newer,
 and at least the iOS 5.0 library.
 
-### Quick Start {.c7 .c3}
+### Quick Start
 
 The easiest way to get started with the Catchoom SDK is by using the
 example application. The example app includes a compiled version of the
 AFNetworking framework (used to connect to the Cloud Recognition API)
 and all dependencies are already added to the project.
 
-### Adding the SDK to your app {.c7 .c3}
+### Adding the SDK to your app
 
 The iOS Catchoom SDK is distributed as a .framework that you can
 directly drag into your project. It has some dependencies on
@@ -282,15 +246,16 @@ below.
 
 [](#)[](#)
 
-+--------------------------------------------------------------------------+
-| ![](images/image12.png)                                                  |
-+--------------------------------------------------------------------------+
+
+![](images/image12.png)
+
 
 ![](images/image05.png)
 
-### ![](images/image02.png) {.c7 .c3}
 
-### Creating your first app {.c7 .c3}
+![](images/image02.png)
+
+### Creating your first app
 
 Once you have set up your project, it’s time to add code to start using
 the Catchoom SDK. There are four steps to do so:
@@ -327,23 +292,23 @@ will return nil.
     module:![](images/image08.png)
 6.  Start tracking:![](images/image11.png)
 
-6. SDK Documentation {.c7 .c3}
+6. SDK Documentation
 ====================
 
 Complete SDK documentation of the classes can be found within the SDK
 distribution in the Documentation folder.
 
-7. Frequently Asked Questions {.c7 .c3}
+7. Frequently Asked Questions
 =============================
 
-Can I add a proxy server between the Catchoom CRS and my app? {.c7 .c3}
+### Can I add a proxy server between the Catchoom CRS and my app?
 -------------------------------------------------------------
 
 Yes, you can. In iOS you can extend the CRSConnect class and change the
 url it points to, then you just need to tell the SDK to use it instead
 of the CRSConnect.
 
-Can I limit the number of searches per second during continuous scan? {.c7 .c3}
+### Can I limit the number of searches per second during continuous scan?
 ---------------------------------------------------------------------
 
 Yes, you can do it through the CatchoomCloudRecognition interface:
@@ -352,19 +317,19 @@ Yes, you can do it through the CatchoomCloudRecognition interface:
 
 with a float number in the range 0 \< n \<= 2.0.
 
-Can I run the app in the simulator? {.c7 .c3}
+### Can I run the app in the simulator?
 -----------------------------------
 
 Currently the simulator is not supported. Our libraries depend on
 devices that have built in camera and the simulator does not have one.
 
-Should/Can I call [\_tracking startTracking]; if it has already been called once? Does it continue tracking or it stops and starts? Will the videoplayback restart or continue? {.c3 .c7}
+### Should/Can I call [_tracking startTracking]; if it has already been called once? Does it continue tracking or it stops and starts? Will the videoplayback restart or continue?
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 The call will have no effect. If the tracking has already started, the
 SDK will continue with the tracking on.
 
-Can I run Finder Mode and tracking simultaneously? {.c7 .c3}
+### Can I run Finder Mode and tracking simultaneously?
 --------------------------------------------------
 
 Yes, but you must manage your AR items. You must control the AR items
@@ -375,4 +340,4 @@ Finder Mode.
 * * * * *
 
 Confidential and Proprietary. Copyright © Catchoom Technologies S.L.
-2013.           /
+2013.           
