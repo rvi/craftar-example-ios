@@ -1,0 +1,52 @@
+// CatchoomSDK_Examples is free software. You may use it under the MIT license, which is copied
+// below and available at http://opensource.org/licenses/MIT
+//
+// Copyright (c) 2014 Catchoom Technologies S.L.
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy of
+// this software and associated documentation files (the "Software"), to deal in
+// the Software without restriction, including without limitation the rights to use,
+// copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the
+// Software, and to permit persons to whom the Software is furnished to do so, subject to
+// the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in all
+// copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+// INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+// PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE
+// FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+// DEALINGS IN THE SOFTWARE.
+
+#import <Foundation/Foundation.h>
+#import <CatchoomSDK/CatchoomSDK.h>
+
+@protocol CatchoomCloudTrackingAutoProtocol;
+
+/**
+ The CatchoomCloudTrackingAuto class encapsulates the communication with the SDK to start a FinderMode search and automatically start tracking when a reference is found, setting some custom content. It also uses a protocol to let the delegate know when the tracking started.
+ */
+@interface CatchoomCloudTrackingLocalContentsAuto : NSObject
+
+// initialize the CatchoomCloudTrackingAuto instance
+- (id) init;
+
+// Start Finder Mode search and switch to tracking when a reference with the example's content (hello world image).
+- (void) start;
+
+// Stop searching or tracking
+- (void) stop;
+
+@property (nonatomic, weak) id <CatchoomCloudTrackingAutoProtocol> delegate;
+
+@end
+
+
+@protocol CatchoomCloudTrackingAutoProtocol <NSObject>
+
+// The CatchoomCloudTrackingAuto instance found an item and started the tracking AR experience.
+- (void) didStartTracking;
+
+@end

@@ -14,3 +14,5 @@ xcuserdata
 profile
 *.moved-aside
 ExternalFrameworks/CatchoomSDK.framework
+gitignored_files
+CatchoomSDK_Examples/ExternalFrameworks
