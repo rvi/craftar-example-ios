@@ -8,6 +8,6 @@ on run argv
         set fwk_location to item 1 of argv
 		activate
 		open location fwk_location
-		if response is "Download SDK" then open location "http://catchoom.com/documentation/sdk/"
+		if response is "Download SDK" then open location "http://catchoom.com/documentation/sdk/?utm_source=ios-sdk&utm_medium=xcode-linker-error-message&utm_campaign=sdk-examples"
 	end tell
 end run
