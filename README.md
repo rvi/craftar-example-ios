@@ -44,54 +44,56 @@ http://catchoom.com/documentation.
 
 The following is a list of concepts that are used in this document.
 
--   Catchoom Cloud Recognition Service (CRS): service that provide the
+-   **Catchoom Cloud Recognition Service (CRS):** service that provide the
     capability to search inside the collection of images specified in a
     request, and get the content associated to that image in order to
     create an AR experience.
--   Finder Mode: continuously scans the camera view searching for
+-   **Finder Mode:** continuously scans the camera view searching for
     objects using the Cloud Recognition Service. It can be
     programmatically started and stopped at any time. The rate of scans
     per second can also be defined.
--   Single Shot Mode: takes a single snapshot from the camera view. It
+-   **Single Shot Mode:** takes a single snapshot from the camera view. It
     is triggered programmatically.
--   AR view: view that shows a mix of the real world captured with the
+-   **AR view:** view that shows a mix of the real world captured with the
     camera and the AR content previously created.
--   AR item: There are two types of items in the Catchoom SDK,
+-   **AR item:** There are two types of items in the Catchoom SDK,
     Recognition Only items, intended just for cloud recognition, and AR
     items, intended for augmented reality experiences (displaying
     contents on top of the item’s reference image).
--   AR content: scene that is displayed on top of a real object (page in
+-   **AR content:** scene that is displayed on top of a real object (page in
     a catalogue, flyer, poster, etc.) creating a custom AR experience.
     It is created via the online drag&drop tool or API, and is stored
     online with a JSON format.
--   AR content types: built-in content types for the AR content.
+-   **AR content types:** built-in content types for the AR content.
     Currently we support image, video and image buttons.
--   3D Object tracking: ability to track an object in 3D to provide the
+-   **3D Object tracking:** ability to track an object in 3D to provide the
     right perspective for the AR view.
--   Tracking data: file that stores visual features to track the object
+-   **Tracking data:** file that stores visual features to track the object
     in 3D.
+
 
 2. Features
 ===========
 
 The Mobile SDK provides the following features:
 
--   Camera capture management: Abstraction of the camera capture and
+-   **Camera capture management:** Abstraction of the camera capture and
     preview.
--   Cloud Recognition: action taken when an image is sent to the
+-   **Cloud Recognition:** action taken when an image is sent to the
     Catchoom Cloud Recognition Service (CRS) via API. Cloud Recognition
     can be used in two modes: Finder Mode and Single Shot Mode.
--   3D Object Tracking
--   AR content rendering in AR view
--   Automatic download of AR content stored online: upon recognition,
+-   **3D Object Tracking**
+-   **AR content rendering in AR view**
+-   **Automatic download of AR content stored online:** upon recognition,
     the SDK automatically requests the necessary assets from Catchoom
     service. Those assets are the Tracking data and the AR content.
--   AR content description parser: processes the information stored in
+-   **AR content description parser:** processes the information stored in
     the JSON of the AR content. The parser can load the AR content
     automatically into the AR view, and display them when the item’s
     reference image is tracked correctly.
--   AR content type extension: ability to extend programmatically the
+-   **AR content type extension:** ability to extend programmatically the
     built-in contents with ad hoc content types.
+
 
 3. Platforms
 ============
