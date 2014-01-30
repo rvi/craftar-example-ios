@@ -302,14 +302,12 @@ distribution in the Documentation folder.
 =============================
 
 ### Can I add a proxy server between the Catchoom CRS and my app?
--------------------------------------------------------------
 
 Yes, you can. In iOS you can extend the CRSConnect class and change the
 url it points to, then you just need to tell the SDK to use it instead
 of the CRSConnect.
 
 ### Can I limit the number of searches per second during continuous scan?
----------------------------------------------------------------------
 
 Yes, you can do it through the CatchoomCloudRecognition interface:
 
@@ -317,20 +315,20 @@ Yes, you can do it through the CatchoomCloudRecognition interface:
 
 with a float number in the range 0 \< n \<= 2.0.
 
+
 ### Can I run the app in the simulator?
------------------------------------
 
 Currently the simulator is not supported. Our libraries depend on
 devices that have built in camera and the simulator does not have one.
 
+
 ### Should/Can I call [_tracking startTracking]; if it has already been called once? Does it continue tracking or it stops and starts? Will the videoplayback restart or continue?
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 The call will have no effect. If the tracking has already started, the
 SDK will continue with the tracking on.
 
+
 ### Can I run Finder Mode and tracking simultaneously?
---------------------------------------------------
 
 Yes, but you must manage your AR items. You must control the AR items
 and the contents you add in order not to add the same item again or load
