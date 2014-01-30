@@ -5,47 +5,20 @@
 
 Table of Contents
 
-[1. Introduction](#1-introduction)
-
-[1.1 Terminology](#11-terminology)
-
-[2. Features](#2-features)
-
-[3. Platforms](#3-platforms)
-
-[4. SDK architecture](#4-sdk-architecture)
-
-[5. SDK integration](#5-sdk-integration)
-
-[5.1 Examples app](#51-examples-app)
-
-[5.2 Integration on iOS native apps](#52-integration-on-ios-native-apps)
-
-[Requirements](#requirements)
-
-[Quick Start](#quick-start)
-
-[Adding the SDK to your app](#adding-the-sdk-to-your-app)
-
-[Creating your first app](#creating-your-first-app)
-
-[6. SDK Documentation](#6-sdk-documentation)
-
-[7. Frequently Asked Questions](#7-frequently-asked-questions)
-
-[Can I add a proxy server between the Catchoom CRS and my
-app?](#can-i-add-a-proxy-server-between-the-catchoom-crs-and-my-app)
-
-[Can I limit the number of searches per second during continuous
-scan?](#can-i-limit-the-number-of-searches-per-second-during-continuous-scan)
-
-[Can I run the app in the simulator?](#can-i-run-the-app-in-the-simulator)
-
-[Should/Can I call [_tracking startTracking]; if it has already been
-called once? Does it continue tracking or it stops and starts? Will the
-videoplayback restart or continue?](#shouldcan-i-call_tracking-starttrackingif-it-has-already-been-called-once-does-it-continue-tracking-or-it-stops-and-starts-will-the-videoplayback-restart-or-continue)
-
-[Can I run Finder Mode and tracking simultaneously?](#can-i-run-finder-mode-and-tracking-simultaneously)
+- [1. Introduction](#1-introduction)
+    - [1.1 Terminology](#11-terminology)
+- [2. Features](#2-features)
+- [3. Platforms](#3-platforms)
+- [4. SDK architecture](#4-sdk-architecture)
+- [5. SDK integration](#5-sdk-integration)
+    - [5.1 Examples app](#51-examples-app)
+    - [5.2 Integration on iOS native apps](#52-integration-on-ios-native-apps)
+        - [Requirements](#requirements)
+        - [Quick Start](#quick-start)
+        - [Adding the SDK to your app](#adding-the-sdk-to-your-app)
+        - [Creating your first app](#creating-your-first-app)
+- [6. SDK Documentation](#6-sdk-documentation)
+- [7. Frequently Asked Questions](#7-frequently-asked-questions)
 
 * * * * *
 
@@ -301,34 +274,34 @@ distribution in the Documentation folder.
 7. Frequently Asked Questions
 =============================
 
-### Can I add a proxy server between the Catchoom CRS and my app?
+#### Can I add a proxy server between the Catchoom CRS and my app?
 
 Yes, you can. In iOS you can extend the CRSConnect class and change the
 url it points to, then you just need to tell the SDK to use it instead
 of the CRSConnect.
 
-### Can I limit the number of searches per second during continuous scan?
+#### Can I limit the number of searches per second during continuous scan?
 
 Yes, you can do it through the CatchoomCloudRecognition interface:
 
-[\_crs setMaximumSearchesPerSecond: 1.0];
+```[\_crs setMaximumSearchesPerSecond: 1.0];```
 
 with a float number in the range 0 \< n \<= 2.0.
 
 
-### Can I run the app in the simulator?
+#### Can I run the app in the simulator?
 
 Currently the simulator is not supported. Our libraries depend on
 devices that have built in camera and the simulator does not have one.
 
 
-### Should/Can I call [_tracking startTracking]; if it has already been called once? Does it continue tracking or it stops and starts? Will the videoplayback restart or continue?
+#### Should/Can I call ```[_tracking startTracking];``` if it has already been called once? Does it continue tracking or it stops and starts? Will the videoplayback restart or continue?
 
 The call will have no effect. If the tracking has already started, the
 SDK will continue with the tracking on.
 
 
-### Can I run Finder Mode and tracking simultaneously?
+#### Can I run Finder Mode and tracking simultaneously?
 
 Yes, but you must manage your AR items. You must control the AR items
 and the contents you add in order not to add the same item again or load
