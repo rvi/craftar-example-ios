@@ -194,7 +194,7 @@ frameworks/libraries that have to be linked and some compilation
 settings to be set. To proceed with the integration follow the steps
 below.
 
-1.  Add the other framework and library dependencies to your project:
+##### Add the other framework and library dependencies to your project:
 
 -   AVFoundation
 -   CoreMedia
@@ -202,7 +202,7 @@ below.
 -   SystemConfiguration
 -   MobileCoreServices
 
-2.  Import everything provided in the CathoomSDK directory:
+##### Import everything provided in the CathoomSDK directory:
 
 -   CatchoomSDK.framework (framework library with the catchoom SDK)
 -   CatchoomSDK.bundle (bundle resources for the SDK)
@@ -211,7 +211,7 @@ below.
     project](https://github.com/AFNetworking/AFNetworking), version
     2.0.3)
 
-3.  Set the Build Settings to produce a CatchoomSDK compatible app.
+##### Set the Build Settings to produce a CatchoomSDK compatible app.
 
 -   Build Active Architecture Only → NO
 -   Valid Architectures → armv7 (other architectures are not supported
@@ -240,32 +240,36 @@ the Catchoom SDK. There are four steps to do so:
 
 2.  Set a preview view for the camera capture, you need to provide a
     UIView referenced in your storyboard and linked to your
-    ViewController:![](images/image01.png)
+    ViewController:
+    ![](images/image01.png)
 
-Note: the ‘videoPreviewView’ you provide will be loaded with a rendering
-view and no other subviews will be displayed for it. If you need to
-display other views as part of this ViewController, add them to
-self.view of the ViewController where you add ‘videoPreviewView’.
+    **Note:** the ‘videoPreviewView’ you provide will be loaded with a rendering
+    view and no other subviews will be displayed for it. If you need to
+    display other views as part of this ViewController, add them to
+    self.view of the ViewController where you add ‘videoPreviewView’.
 
 3.  Start using the CloudRecognition Interface:
 
-1.  Use the CatchoomCloudRecognitionProtocol to receive search
+    a. Use the CatchoomCloudRecognitionProtocol to receive search
     responses:![](images/image07.png)
-2.  Start searching for objects to recognize from the camera
+    
+    b. Start searching for objects to recognize from the camera
     capture![](images/image09.png)
-3.  Implement the results callback to receive tracking data and
+    
+    c. Implement the results callback to receive tracking data and
     contents:![](images/image06.png)
 
 4.  Start the augmented reality experience:
 
-4.  Get the tracking interface:![](images/image03.png)
-
-Note: this step needs the preview to be initialized. Otherwise, the sdk
-will return nil.
-
-5.   Obtain the AR items and add them to the tracking
+    a. Get the tracking interface:![](images/image03.png)
+    
+    **Note:** this step needs the preview to be initialized. Otherwise, the sdk
+    will return nil.
+    
+    b. Obtain the AR items and add them to the tracking
     module:![](images/image08.png)
-6.  Start tracking:![](images/image11.png)
+    
+    c. Start tracking:![](images/image11.png)
 
 6. SDK Documentation
 ====================
