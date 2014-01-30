@@ -337,7 +337,3 @@ and the contents you add in order not to add the same item again or load
 the content several times when an item being tracked is found by the
 Finder Mode.
 
-* * * * *
-
-Confidential and Proprietary. Copyright © Catchoom Technologies S.L.
-2013.           
