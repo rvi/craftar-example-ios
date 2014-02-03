@@ -26,6 +26,7 @@
 
 @property (weak, nonatomic) IBOutlet UIButton* _helloWorldButton;
 @property (weak, nonatomic) IBOutlet UIButton* _contentCreationButton;
+@property (weak, nonatomic) IBOutlet UIButton* _recognitionOnlyButton;
 
 - (IBAction)buttonPressed:(id)sender;
 

@@ -45,8 +45,13 @@
     } else if (sender == self._contentCreationButton) {
         UIStoryboard *exampleStoryBoard = [UIStoryboard storyboardWithName:@"CloudRecognitionAndTracking" bundle:nil];
         target = (UIViewController *)[exampleStoryBoard instantiateViewControllerWithIdentifier:@"CloudRecognitionAndTrackingViewController"];
-        target.navigationItem.title = @"Content creation!";
+        target.navigationItem.title = @"Content creation";
         [[[CatchoomSDK sharedCatchoomSDK] getCloudRecognitionInterface] setToken:@"craftarexamples2"];
+    } else if (sender == self._recognitionOnlyButton) {
+        UIStoryboard *exampleStoryBoard = [UIStoryboard storyboardWithName:@"CloudRecognition" bundle:nil];
+        target = (UIViewController *)[exampleStoryBoard instantiateViewControllerWithIdentifier:@"CloudRecognitionOneShotViewController"];
+        target.navigationItem.title = @"Recognition Only";
+        [[[CatchoomSDK sharedCatchoomSDK] getCloudRecognitionInterface] setToken:@"1234123412341234"];
     }
     [self.navigationController pushViewController:target animated:YES];
 }

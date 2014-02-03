@@ -29,6 +29,10 @@
 		A01F3E0F1847B0E4003D8D62 /* corner.png in Resources */ = {isa = PBXBuildFile; fileRef = A01F3E081847B0E4003D8D62 /* corner.png */; };
 		A01F3E101847B0E4003D8D62 /* corner@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A01F3E091847B0E4003D8D62 /* corner@2x.png */; };
 		A039ABA9189918D30050D6F7 /* CatchoomSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A039ABA8189918D30050D6F7 /* CatchoomSDK.bundle */; };
+		A039ABB4189FE2490050D6F7 /* CloudRecognition.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A039ABAF189FE2490050D6F7 /* CloudRecognition.storyboard */; };
+		A039ABB5189FE2490050D6F7 /* CloudRecognitionOneShotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A039ABB1189FE2490050D6F7 /* CloudRecognitionOneShotViewController.m */; };
+		A039ABB6189FE2490050D6F7 /* FinderModeSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A039ABB3189FE2490050D6F7 /* FinderModeSearchViewController.m */; };
+		A039ABB8189FEDC10050D6F7 /* reco_only.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A039ABB7189FEDC10050D6F7 /* reco_only.jpg */; };
 		A084A2FC1875BD1100EF452B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A084A2FB1875BD1100EF452B /* Main.storyboard */; };
 		A084A2FE1875BD7000EF452B /* craftAR_c.png in Resources */ = {isa = PBXBuildFile; fileRef = A084A2FD1875BD7000EF452B /* craftAR_c.png */; };
 		A084A3051875BD7D00EF452B /* craftAR_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A084A2FF1875BD7D00EF452B /* craftAR_logo.png */; };
@@ -80,6 +84,13 @@
 		A01F3E081847B0E4003D8D62 /* corner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = corner.png; sourceTree = "<group>"; };
 		A01F3E091847B0E4003D8D62 /* corner@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "corner@2x.png"; sourceTree = "<group>"; };
 		A039ABA8189918D30050D6F7 /* CatchoomSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = CatchoomSDK.bundle; path = ExternalFrameworks/CatchoomSDK.bundle; sourceTree = "<group>"; };
+		A039ABAE189FE2490050D6F7 /* CatchoomSDKUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CatchoomSDKUtils.h; path = CloudRecognitionOnly/CatchoomSDKUtils.h; sourceTree = "<group>"; };
+		A039ABAF189FE2490050D6F7 /* CloudRecognition.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CloudRecognition.storyboard; path = CloudRecognitionOnly/CloudRecognition.storyboard; sourceTree = "<group>"; };
+		A039ABB0189FE2490050D6F7 /* CloudRecognitionOneShotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudRecognitionOneShotViewController.h; path = CloudRecognitionOnly/CloudRecognitionOneShotViewController.h; sourceTree = "<group>"; };
+		A039ABB1189FE2490050D6F7 /* CloudRecognitionOneShotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudRecognitionOneShotViewController.m; path = CloudRecognitionOnly/CloudRecognitionOneShotViewController.m; sourceTree = "<group>"; };
+		A039ABB2189FE2490050D6F7 /* FinderModeSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FinderModeSearchViewController.h; path = CloudRecognitionOnly/FinderModeSearchViewController.h; sourceTree = "<group>"; };
+		A039ABB3189FE2490050D6F7 /* FinderModeSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FinderModeSearchViewController.m; path = CloudRecognitionOnly/FinderModeSearchViewController.m; sourceTree = "<group>"; };
+		A039ABB7189FEDC10050D6F7 /* reco_only.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = reco_only.jpg; sourceTree = "<group>"; };
 		A084A2FB1875BD1100EF452B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A084A2FD1875BD7000EF452B /* craftAR_c.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = craftAR_c.png; sourceTree = "<group>"; };
 		A084A2FF1875BD7D00EF452B /* craftAR_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = craftAR_logo.png; sourceTree = "<group>"; };
@@ -155,6 +166,7 @@
 			children = (
 				A01F3E011847B0E4003D8D62 /* Example 1 */,
 				A01F3DD318478B72003D8D62 /* Example 2 */,
+				A039ABAD189FE2150050D6F7 /* Example 3 */,
 				A01F3D861845FA5A003D8D62 /* AppDelegate.h */,
 				A01F3D871845FA5A003D8D62 /* AppDelegate.m */,
 				A01F3DA61845FE93003D8D62 /* Storyboard.storyboard */,
@@ -196,6 +208,7 @@
 				A01F3DC018478372003D8D62 /* content_creation_button.png */,
 				A01F3DC118478372003D8D62 /* content_creation_image_p.png */,
 				A01F3DC218478372003D8D62 /* hello_world_image.png */,
+				A039ABB7189FEDC10050D6F7 /* reco_only.jpg */,
 				A039ABA8189918D30050D6F7 /* CatchoomSDK.bundle */,
 			);
 			name = Resources;
@@ -245,6 +258,19 @@
 				A01F3E091847B0E4003D8D62 /* corner@2x.png */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		A039ABAD189FE2150050D6F7 /* Example 3 */ = {
+			isa = PBXGroup;
+			children = (
+				A039ABAE189FE2490050D6F7 /* CatchoomSDKUtils.h */,
+				A039ABAF189FE2490050D6F7 /* CloudRecognition.storyboard */,
+				A039ABB0189FE2490050D6F7 /* CloudRecognitionOneShotViewController.h */,
+				A039ABB1189FE2490050D6F7 /* CloudRecognitionOneShotViewController.m */,
+				A039ABB2189FE2490050D6F7 /* FinderModeSearchViewController.h */,
+				A039ABB3189FE2490050D6F7 /* FinderModeSearchViewController.m */,
+			);
+			name = "Example 3";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,9 +343,11 @@
 				A01F3E0D1847B0E4003D8D62 /* CloudRecognitionAndTrackingLocalContents.storyboard in Resources */,
 				A01F3DDF18478B72003D8D62 /* CloudRecognitionAndTracking.storyboard in Resources */,
 				A084A3071875BD7D00EF452B /* craftAR_logo-iPad.png in Resources */,
+				A039ABB4189FE2490050D6F7 /* CloudRecognition.storyboard in Resources */,
 				A01F3DC818478372003D8D62 /* hello_world_image.png in Resources */,
 				A01F3DC618478372003D8D62 /* content_creation_button.png in Resources */,
 				A084A30A1875BD7D00EF452B /* questionMark@2x.png in Resources */,
+				A039ABB8189FEDC10050D6F7 /* reco_only.jpg in Resources */,
 				A084A3051875BD7D00EF452B /* craftAR_logo.png in Resources */,
 				A084A3091875BD7D00EF452B /* questionMark.png in Resources */,
 				A01F3DA71845FE93003D8D62 /* Storyboard.storyboard in Resources */,
@@ -351,10 +379,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A01F3DAA1846043C003D8D62 /* MainScreenViewController.m in Sources */,
+				A039ABB5189FE2490050D6F7 /* CloudRecognitionOneShotViewController.m in Sources */,
 				A01F3E0C1847B0E4003D8D62 /* CatchoomCloudTrackingLocalContentsAuto.m in Sources */,
 				A01F3D881845FA5A003D8D62 /* AppDelegate.m in Sources */,
 				A01F3DE018478B72003D8D62 /* CloudRecognitionAndTrackingViewController.m in Sources */,
 				A01F3D841845FA5A003D8D62 /* main.m in Sources */,
+				A039ABB6189FE2490050D6F7 /* FinderModeSearchViewController.m in Sources */,
 				A01F3E0E1847B0E4003D8D62 /* CloudRecognitionAndTrackingLocalContentsViewController.m in Sources */,
 				A01F3DDE18478B72003D8D62 /* CatchoomCloudTrackingAuto.m in Sources */,
 			);
