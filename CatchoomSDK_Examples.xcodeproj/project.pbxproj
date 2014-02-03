@@ -12,7 +12,6 @@
 		A01F3D821845FA5A003D8D62 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A01F3D801845FA5A003D8D62 /* InfoPlist.strings */; };
 		A01F3D841845FA5A003D8D62 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A01F3D831845FA5A003D8D62 /* main.m */; };
 		A01F3D881845FA5A003D8D62 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A01F3D871845FA5A003D8D62 /* AppDelegate.m */; };
-		A01F3DA71845FE93003D8D62 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A01F3DA61845FE93003D8D62 /* Storyboard.storyboard */; };
 		A01F3DAA1846043C003D8D62 /* MainScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A01F3DA91846043C003D8D62 /* MainScreenViewController.m */; };
 		A01F3DC618478372003D8D62 /* content_creation_button.png in Resources */ = {isa = PBXBuildFile; fileRef = A01F3DC018478372003D8D62 /* content_creation_button.png */; };
 		A01F3DC718478372003D8D62 /* content_creation_image_p.png in Resources */ = {isa = PBXBuildFile; fileRef = A01F3DC118478372003D8D62 /* content_creation_image_p.png */; };
@@ -62,7 +61,6 @@
 		A01F3D851845FA5A003D8D62 /* CatchoomSDK_Examples-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CatchoomSDK_Examples-Prefix.pch"; sourceTree = "<group>"; };
 		A01F3D861845FA5A003D8D62 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A01F3D871845FA5A003D8D62 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A01F3DA61845FE93003D8D62 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		A01F3DA81846043C003D8D62 /* MainScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainScreenViewController.h; sourceTree = "<group>"; };
 		A01F3DA91846043C003D8D62 /* MainScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainScreenViewController.m; sourceTree = "<group>"; };
 		A01F3DC018478372003D8D62 /* content_creation_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = content_creation_button.png; path = Resources/content_creation_button.png; sourceTree = "<group>"; };
@@ -169,7 +167,6 @@
 				A039ABAD189FE2150050D6F7 /* Example 3 */,
 				A01F3D861845FA5A003D8D62 /* AppDelegate.h */,
 				A01F3D871845FA5A003D8D62 /* AppDelegate.m */,
-				A01F3DA61845FE93003D8D62 /* Storyboard.storyboard */,
 				A084A2FB1875BD1100EF452B /* Main.storyboard */,
 				A01F3DA81846043C003D8D62 /* MainScreenViewController.h */,
 				A01F3DA91846043C003D8D62 /* MainScreenViewController.m */,
@@ -350,7 +347,6 @@
 				A039ABB8189FEDC10050D6F7 /* reco_only.jpg in Resources */,
 				A084A3051875BD7D00EF452B /* craftAR_logo.png in Resources */,
 				A084A3091875BD7D00EF452B /* questionMark.png in Resources */,
-				A01F3DA71845FE93003D8D62 /* Storyboard.storyboard in Resources */,
 				A01F3E101847B0E4003D8D62 /* corner@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
