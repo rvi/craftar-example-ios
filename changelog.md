@@ -7,8 +7,8 @@ Changelog
 ###### Catchoom SDK 2.1
 * Removed dependency with RestKit, now using AFNetworking 2.0.3
 * Fixed bug that made apps crash when adding or removing references while tracking
-* TrackingReference is deprecated, use AR item now
-* Prompt error when compiling for simulator (not supported)
+* TrackingReference is deprecated, use CatchoomARItem now
+* Prompt error when compiling for xCode simulator (which is not supported)
 * New CRSConnect class to use proxy server
 * Some SDK methods have been renamed (startFinderMode, stopFinderMode)
 * Added interface to perform Single Shot search directly
