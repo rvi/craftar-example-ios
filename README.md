@@ -54,23 +54,14 @@ The following is a list of concepts that are used in this document.
     per second can also be defined.
 -   **Single Shot Mode:** takes a single snapshot from the camera view. It
     is triggered programmatically.
--   **AR view:** view that shows a mix of the real world captured with the
-    camera and the AR content previously created.
--   **AR item:** There are two types of items in the Catchoom SDK,
-    Recognition Only items, intended just for cloud recognition, and AR
-    items, intended for augmented reality experiences (displaying
-    contents on top of the item’s reference image).
--   **AR content:** scene that is displayed on top of a real object (page in
-    a catalogue, flyer, poster, etc.) creating a custom AR experience.
-    It is created via the online drag&drop tool or API, and is stored
-    online with a JSON format.
--   **AR content types:** built-in content types for the AR content.
-    Currently we support image, video and image buttons.
--   **3D Object tracking:** ability to track an object in 3D to provide the
-    right perspective for the AR view.
--   **Tracking data:** file that stores visual features to track the object
-    in 3D.
-
+-   **Cloud Recognition Item:** An item represents an object to be recognised. It can have one or more reference images to identify it and additional information (contents) to provide information about the item or application logic. There are two types of Recognition Items:
+    -   **IR (recognition only) Items:** Intended to trigger content that is displayed at full-screen (e.g. video or product specifications) or add application logic to the image recognition (e.g. retrieve a coupon). Recognition only items can represent 2D (flat) or 3D (non-planar) objects and objects with several faces.
+    - **AR item:** Augmented Reality items allow to have contents overlaid on top of the reference object once captured with a camera in the real world. Contents include images, videos, buttons among others. AR items can only have one reference image.
+-   **AR view:** view that shows a mix of the real world captured with the camera and the AR content (see below) previously specified.
+-   **AR content:** scene that is displayed on top of a real object (page in a catalogue, flyer, poster, etc.) that defines a custom AR experience. It is created via the CraftAR content creation tool online or API, and is stored online with a JSON format.
+-   **AR content types:** built-in content types for the AR content. Currently we support image, video and image buttons.
+-   **3D Object tracking:** ability to track an object in 3D to provide the right perspective for the AR view.
+Tracking data: file that stores visual features to track the object in 3D.
 
 2. Features
 ===========
