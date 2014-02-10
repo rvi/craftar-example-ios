@@ -17,7 +17,6 @@
 		A01F3E0E1847B0E4003D8D62 /* AR_ProgrammaticallyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A01F3E061847B0E4003D8D62 /* AR_ProgrammaticallyViewController.m */; };
 		A039ABB4189FE2490050D6F7 /* CloudRecognition.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A039ABAF189FE2490050D6F7 /* CloudRecognition.storyboard */; };
 		A039ABB5189FE2490050D6F7 /* CloudRecognitionOneShotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A039ABB1189FE2490050D6F7 /* CloudRecognitionOneShotViewController.m */; };
-		A039ABB6189FE2490050D6F7 /* FinderModeSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A039ABB3189FE2490050D6F7 /* FinderModeSearchViewController.m */; };
 		A039ABC718A4F0510050D6F7 /* AR_from_CraftAR.png in Resources */ = {isa = PBXBuildFile; fileRef = A039ABBB18A4F0510050D6F7 /* AR_from_CraftAR.png */; };
 		A039ABC818A4F0510050D6F7 /* craftAR_c.png in Resources */ = {isa = PBXBuildFile; fileRef = A039ABBC18A4F0510050D6F7 /* craftAR_c.png */; };
 		A039ABC918A4F0510050D6F7 /* craftAR_logo-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = A039ABBD18A4F0510050D6F7 /* craftAR_logo-iPad.png */; };
@@ -59,12 +58,9 @@
 		A01F3E041847B0E4003D8D62 /* AR_Programmatically.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AR_Programmatically.storyboard; sourceTree = "<group>"; };
 		A01F3E051847B0E4003D8D62 /* AR_ProgrammaticallyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AR_ProgrammaticallyViewController.h; sourceTree = "<group>"; };
 		A01F3E061847B0E4003D8D62 /* AR_ProgrammaticallyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AR_ProgrammaticallyViewController.m; sourceTree = "<group>"; };
-		A039ABAE189FE2490050D6F7 /* CatchoomSDKUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatchoomSDKUtils.h; sourceTree = "<group>"; };
 		A039ABAF189FE2490050D6F7 /* CloudRecognition.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CloudRecognition.storyboard; sourceTree = "<group>"; };
 		A039ABB0189FE2490050D6F7 /* CloudRecognitionOneShotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CloudRecognitionOneShotViewController.h; sourceTree = "<group>"; };
 		A039ABB1189FE2490050D6F7 /* CloudRecognitionOneShotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CloudRecognitionOneShotViewController.m; sourceTree = "<group>"; };
-		A039ABB2189FE2490050D6F7 /* FinderModeSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinderModeSearchViewController.h; sourceTree = "<group>"; };
-		A039ABB3189FE2490050D6F7 /* FinderModeSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinderModeSearchViewController.m; sourceTree = "<group>"; };
 		A039ABBB18A4F0510050D6F7 /* AR_from_CraftAR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AR_from_CraftAR.png; path = Resources/AR_from_CraftAR.png; sourceTree = "<group>"; };
 		A039ABBC18A4F0510050D6F7 /* craftAR_c.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = craftAR_c.png; path = Resources/craftAR_c.png; sourceTree = "<group>"; };
 		A039ABBD18A4F0510050D6F7 /* craftAR_logo-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "craftAR_logo-iPad.png"; path = "Resources/craftAR_logo-iPad.png"; sourceTree = "<group>"; };
@@ -215,12 +211,9 @@
 		A039ABAD189FE2150050D6F7 /* Example 3 - Recognition only */ = {
 			isa = PBXGroup;
 			children = (
-				A039ABAE189FE2490050D6F7 /* CatchoomSDKUtils.h */,
 				A039ABAF189FE2490050D6F7 /* CloudRecognition.storyboard */,
 				A039ABB0189FE2490050D6F7 /* CloudRecognitionOneShotViewController.h */,
 				A039ABB1189FE2490050D6F7 /* CloudRecognitionOneShotViewController.m */,
-				A039ABB2189FE2490050D6F7 /* FinderModeSearchViewController.h */,
-				A039ABB3189FE2490050D6F7 /* FinderModeSearchViewController.m */,
 			);
 			path = "Example 3 - Recognition only";
 			sourceTree = "<group>";
@@ -338,7 +331,6 @@
 				A039ABB5189FE2490050D6F7 /* CloudRecognitionOneShotViewController.m in Sources */,
 				A01F3D881845FA5A003D8D62 /* AppDelegate.m in Sources */,
 				A01F3D841845FA5A003D8D62 /* main.m in Sources */,
-				A039ABB6189FE2490050D6F7 /* FinderModeSearchViewController.m in Sources */,
 				A01F3E0E1847B0E4003D8D62 /* AR_ProgrammaticallyViewController.m in Sources */,
 				A039ABDD18A91F410050D6F7 /* AR_fromCraftARViewController.m in Sources */,
 			);

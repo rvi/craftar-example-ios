@@ -10,19 +10,10 @@
 
 @interface CloudRecognitionOneShotViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UIButton *_takePhotoButton;
 @property (weak, nonatomic) IBOutlet UIView *_preview;
-@property (weak, nonatomic) IBOutlet UIView *_resultOverlay;
-@property (weak, nonatomic) IBOutlet UIView *_initialOverlay;
-@property (weak, nonatomic) IBOutlet UIImageView *_itemThumbnailView;
-@property (weak, nonatomic) IBOutlet UILabel *_itemNameLabel;
-@property (weak, nonatomic) IBOutlet UIView *_contentBox;
+@property (weak, nonatomic) IBOutlet UIView *_previewOverlay;
+@property (weak, nonatomic) IBOutlet UIView *_scanningOverlay;
 
 - (IBAction)snapPhotoToSearch:(id)sender;
-- (IBAction)donePressed:(id)sender;
-- (IBAction)contentPressed:(id)sender;
-- (IBAction)contentReleasedInside:(id)sender;
-- (IBAction)contentReleasedOutside:(id)sender;
-
 
 @end
