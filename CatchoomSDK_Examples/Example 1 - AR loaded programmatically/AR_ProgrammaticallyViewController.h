@@ -22,20 +22,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CloudRecognitionAndTrackingViewController : UIViewController
+@interface AR_ProgrammaticallyViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIView *videoPreviewView;
-@property (weak, nonatomic) IBOutlet UIView *_tapToScanOverlay;
 @property (weak, nonatomic) IBOutlet UIView *_scanOverlay;
-@property (weak, nonatomic) IBOutlet UIView *_trackingOverlay;
-@property (weak, nonatomic) IBOutlet UIButton *_stopTrackingButton;
-@property (weak, nonatomic) IBOutlet UIImageView *_scanOverlayTL;
-@property (weak, nonatomic) IBOutlet UIImageView *_scanOverlayTR;
-@property (weak, nonatomic) IBOutlet UIImageView *_scanOverlayBR;
-@property (weak, nonatomic) IBOutlet UIImageView *_scanOverlayBL;
-
-
-- (IBAction)startScanning:(id)sender;
-- (IBAction)stopTracking:(id)sender;
 
 @end

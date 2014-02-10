@@ -21,21 +21,21 @@
 // DEALINGS IN THE SOFTWARE.
 
 
-#import "CloudRecognitionAndTrackingViewController.h"
+#import "AR_fromCraftARViewController.h"
 #import <CatchoomSDK/CatchoomSDK.h>
-#import "CatchoomCloudTrackingAuto.h"
 
-@interface CloudRecognitionAndTrackingViewController () <CatchoomSDKProtocol, CatchoomCloudTrackingAutoProtocol> {
+@interface AR_fromCraftARViewController () <CatchoomSDKProtocol, CatchoomCloudRecognitionProtocol> {
     // Catchoom SDK reference
     CatchoomSDK *_sdk;
     
-    // Manages communication with the SDK
-    CatchoomCloudTrackingAuto *_catchoomAuto;
+    CatchoomCloudRecognition *_cloudRecognition;
+    CatchoomTracking *_tracking;
     
+    bool _isTrackingEnabled;
 }
 @end
 
-@implementation CloudRecognitionAndTrackingViewController
+@implementation AR_fromCraftARViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -54,12 +54,7 @@
     _sdk = [CatchoomSDK sharedCatchoomSDK];
     
     // Implement the CatchoomSDKProtocol to know when the previewView is ready
-    _sdk.delegate = self;
-    
-    // Rotate the corner images for the scan overlay
-    self._scanOverlayTR.transform = CGAffineTransformMakeRotation(M_PI_2);
-    self._scanOverlayBR.transform = CGAffineTransformMakeRotation(M_PI);
-    self._scanOverlayBL.transform = CGAffineTransformMakeRotation(M_PI+M_PI_2);
+    [_sdk setDelegate:self];
 }
 
 - (void) viewWillAppear:(BOOL) animated {
@@ -74,47 +69,60 @@
     
     // Stop the SDK when the view is being closed to cleanup sdk internals.
     [_sdk stopCapture];
-    [_catchoomAuto stop];
+    if (_isTrackingEnabled) {
+        [_tracking stopTracking];
+        [_tracking removeAllARItems];
+    } else {
+        [_cloudRecognition stopFinderMode];
+    }
 }
 
 - (void) didStartCapture {
+    // Get the CloudRecognition and set self as delegate to receive search responses
+    _cloudRecognition = [_sdk getCloudRecognitionInterface];
+    [_cloudRecognition setDelegate:self];
     
-    // Setup Catchoom CloudTrackingAuto object for cloud search and automatic content setup
-    _catchoomAuto = [[CatchoomCloudTrackingAuto alloc] init];
+    // Get the Tracking instance
+    _tracking = [_sdk getTrackingInterface];
     
-    // Implement the CatchoomCloudTrackingAuto Protocol to know when a reference was detected and the tracking started.
-    [_catchoomAuto setDelegate:self];
-}
-
-// The user pressed the "Tap to scan" layer, start scanning for objects, display the scan overlay only.
-- (IBAction)startScanning:(id)sender {
-    self._tapToScanOverlay.hidden = true;
-    self._trackingOverlay.hidden = true;
-    
+    // Start scanning
     self._scanOverlay.hidden = false;
-    [_catchoomAuto start];
+    [_cloudRecognition startFinderMode];
 }
 
-// A reference was found and tracking started displaying the reference's content. Display the tracking overlay only (with the "stop" button).
-- (void) didStartTracking {
-    self._scanOverlay.hidden = true;
+- (void) didGetSearchResults:(NSArray *)results {
+    Boolean haveContent = false;
+    [_cloudRecognition stopFinderMode];
     
-    self._trackingOverlay.hidden = false;
-    [self._trackingOverlay setNeedsDisplay];
+    // Look for trakcable results
+    for (CatchoomCloudRecognitionItem* item in results) {
+        
+        if (item.getType == ITEM_TYPE_AR) {
+            CatchoomARItem* arItem = (CatchoomARItem *)item;
+            
+            // If the item has contents, add it for an AR experience
+            if ([arItem.contents count] > 0) {
+                [_tracking addARItem:arItem];
+                haveContent = true;
+            }
+        }
+    }
+    
+    if (haveContent) {
+        [_tracking startTracking];
+        _isTrackingEnabled = true;
+        self._scanOverlay.hidden = true;
+    } else {
+        [_cloudRecognition startFinderMode];
+    }
 }
 
-// The user pressed the "stop" button.
-- (IBAction)stopTracking:(id)sender {
-    
-    // Hide the scanning layer and tracking overlays
-    self._scanOverlay.hidden = true;
-    self._trackingOverlay.hidden = true;
-    
-    // Show the first layer ("Tap to scan")
-    self._tapToScanOverlay.hidden = false;
-    
-    // Stop if tracking
-    [_catchoomAuto stop];
+- (void) didFailWithError:(CatchoomSDKError *)error {
+    NSLog(@"Error: %@", [error localizedDescription]);
+}
+
+- (void) didValidateToken {
+    // Called after setToken or startSearch if the token is valid.
 }
 
 - (void)didReceiveMemoryWarning

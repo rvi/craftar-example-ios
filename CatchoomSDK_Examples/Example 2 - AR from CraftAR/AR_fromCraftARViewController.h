@@ -20,33 +20,11 @@
 // OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 // DEALINGS IN THE SOFTWARE.
 
-#import <Foundation/Foundation.h>
-#import <CatchoomSDK/CatchoomSDK.h>
+#import <UIKit/UIKit.h>
 
-@protocol CatchoomCloudTrackingAutoProtocol;
+@interface AR_fromCraftARViewController : UIViewController
 
-/**
- The CatchoomCloudTrackingAuto class encapsulates the communication with the SDK to start a FinderMode search and automatically start tracking when a reference is found, setting some custom content. It also uses a protocol to let the delegate know when the tracking started.
- */
-@interface CatchoomCloudTrackingLocalContentsAuto : NSObject
-
-// initialize the CatchoomCloudTrackingAuto instance
-- (id) init;
-
-// Start Finder Mode search and switch to tracking when a reference with the example's content (hello world image).
-- (void) start;
-
-// Stop searching or tracking
-- (void) stop;
-
-@property (nonatomic, weak) id <CatchoomCloudTrackingAutoProtocol> delegate;
-
-@end
-
-
-@protocol CatchoomCloudTrackingAutoProtocol <NSObject>
-
-// The CatchoomCloudTrackingAuto instance found an item and started the tracking AR experience.
-- (void) didStartTracking;
+@property (weak, nonatomic) IBOutlet UIView *videoPreviewView;
+@property (weak, nonatomic) IBOutlet UIView *_scanOverlay;
 
 @end

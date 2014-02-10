@@ -38,14 +38,14 @@
 - (IBAction)buttonPressed:(id)sender {
     UIViewController *target;
     if (sender == self._helloWorldButton) {
-        UIStoryboard *exampleStoryBoard = [UIStoryboard storyboardWithName:@"CloudRecognitionAndTrackingLocalContents" bundle:nil];
-        target = (UIViewController *)[exampleStoryBoard instantiateViewControllerWithIdentifier:@"CloudRecognitionAndTrackingLocalContentsViewController"];
-        target.navigationItem.title = @"Hello world!";
+        UIStoryboard *exampleStoryBoard = [UIStoryboard storyboardWithName:@"AR_Programmatically" bundle:nil];
+        target = (UIViewController *)[exampleStoryBoard instantiateViewControllerWithIdentifier:@"AR_ProgrammaticallyViewController"];
+        target.navigationItem.title = @"AR programmatically";
         [[[CatchoomSDK sharedCatchoomSDK] getCloudRecognitionInterface] setToken:@"craftarexamples1"];
     } else if (sender == self._contentCreationButton) {
-        UIStoryboard *exampleStoryBoard = [UIStoryboard storyboardWithName:@"CloudRecognitionAndTracking" bundle:nil];
-        target = (UIViewController *)[exampleStoryBoard instantiateViewControllerWithIdentifier:@"CloudRecognitionAndTrackingViewController"];
-        target.navigationItem.title = @"Content creation";
+        UIStoryboard *exampleStoryBoard = [UIStoryboard storyboardWithName:@"AR_fromCraftAR" bundle:nil];
+        target = (UIViewController *)[exampleStoryBoard instantiateViewControllerWithIdentifier:@"AR_fromCraftARViewController"];
+        target.navigationItem.title = @"AR from CraftAR";
         [[[CatchoomSDK sharedCatchoomSDK] getCloudRecognitionInterface] setToken:@"craftarexamples2"];
     } else if (sender == self._recognitionOnlyButton) {
         UIStoryboard *exampleStoryBoard = [UIStoryboard storyboardWithName:@"CloudRecognition" bundle:nil];
