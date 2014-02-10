@@ -98,6 +98,45 @@ NSString* utm_source = @"CraftARExamplesApp";
     [self.navigationController pushViewController:webViewController animated:YES];
 }
 
+
+- (IBAction)launchAPIURL:(id)sender {
+    NSMutableString *urlString = [[NSMutableString alloc] initWithString: @"http://catchoom.com/documentation/api/management?utm_source="];
+    [urlString appendString:utm_source];
+    [urlString appendString:@"&utm_medium="];
+    [urlString appendString:utm_medium];
+    [urlString appendString:@"&utm_campaign=HelpWithAPI"];
+    
+    // Open URL in Webview
+    UIViewController *webViewController = [[UIViewController alloc] init];
+    
+    UIWebView *uiWebView = [[UIWebView alloc] initWithFrame: self.view.frame];
+    [uiWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:urlString]]];
+    uiWebView.scalesPageToFit = YES;
+    
+    [webViewController.view addSubview: uiWebView];
+    [self.navigationController pushViewController:webViewController animated:YES];
+    
+}
+
+- (IBAction)launchCRSURL:(id)sender {
+    NSMutableString *urlString = [[NSMutableString alloc] initWithString: @"http://crs.catchoom.com?utm_source="];
+    [urlString appendString:utm_source];
+    [urlString appendString:@"&utm_medium="];
+    [urlString appendString:utm_medium];
+    [urlString appendString:@"&utm_campaign=HelpWithAPI"];
+    
+    // Open URL in Webview
+    UIViewController *webViewController = [[UIViewController alloc] init];
+    
+    UIWebView *uiWebView = [[UIWebView alloc] initWithFrame: self.view.frame];
+    [uiWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:urlString]]];
+    uiWebView.scalesPageToFit = YES;
+    
+    [webViewController.view addSubview: uiWebView];
+    [self.navigationController pushViewController:webViewController animated:YES];
+    
+}
+
 #pragma mark -
 
 @end
