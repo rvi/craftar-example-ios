@@ -38,7 +38,6 @@
     _sdk = [CatchoomSDK sharedCatchoomSDK];
     _sdk.delegate = self;
     
-    [[_sdk getCloudRecognitionInterface] setToken: @"craftarexamples3"];
     _crs = [_sdk getCloudRecognitionInterface];
     _crs.delegate = self;
     

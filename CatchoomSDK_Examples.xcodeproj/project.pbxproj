@@ -23,17 +23,17 @@
 		A039ABCA18A4F0510050D6F7 /* craftAR_logo-iPad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A039ABBE18A4F0510050D6F7 /* craftAR_logo-iPad@2x.png */; };
 		A039ABCB18A4F0510050D6F7 /* craftAR_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A039ABBF18A4F0510050D6F7 /* craftAR_logo.png */; };
 		A039ABCC18A4F0510050D6F7 /* craftAR_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A039ABC018A4F0510050D6F7 /* craftAR_logo@2x.png */; };
-		A039ABCD18A4F0510050D6F7 /* AR_programmatically.png in Resources */ = {isa = PBXBuildFile; fileRef = A039ABC118A4F0510050D6F7 /* AR_programmatically.png */; };
 		A039ABCE18A4F0510050D6F7 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = A039ABC218A4F0510050D6F7 /* play.png */; };
 		A039ABCF18A4F0510050D6F7 /* play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A039ABC318A4F0510050D6F7 /* play@2x.png */; };
 		A039ABD018A4F0510050D6F7 /* questionMark.png in Resources */ = {isa = PBXBuildFile; fileRef = A039ABC418A4F0510050D6F7 /* questionMark.png */; };
 		A039ABD118A4F0510050D6F7 /* questionMark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A039ABC518A4F0510050D6F7 /* questionMark@2x.png */; };
 		A039ABD518A4F2D60050D6F7 /* AR from CraftAR service.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A039ABD218A4F2D60050D6F7 /* AR from CraftAR service.jpg */; };
-		A039ABD618A4F2D60050D6F7 /* AR programmatically.png in Resources */ = {isa = PBXBuildFile; fileRef = A039ABD318A4F2D60050D6F7 /* AR programmatically.png */; };
 		A039ABD718A4F2D60050D6F7 /* Recognition only.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A039ABD418A4F2D60050D6F7 /* Recognition only.jpg */; };
 		A039ABD918A917EF0050D6F7 /* CatchoomSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A039ABD818A917EF0050D6F7 /* CatchoomSDK.bundle */; };
 		A039ABDD18A91F410050D6F7 /* AR_fromCraftARViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A039ABDB18A91F410050D6F7 /* AR_fromCraftARViewController.m */; };
 		A039ABDE18A91F410050D6F7 /* AR_fromCraftAR.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A039ABDC18A91F410050D6F7 /* AR_fromCraftAR.storyboard */; };
+		A039ABE218AA6C450050D6F7 /* AR_programmatically_content.png in Resources */ = {isa = PBXBuildFile; fileRef = A039ABE118AA6C450050D6F7 /* AR_programmatically_content.png */; };
+		A039ABE418AA6CC00050D6F7 /* AR programmatically.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A039ABE318AA6CC00050D6F7 /* AR programmatically.jpg */; };
 		A084A2FC1875BD1100EF452B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A084A2FB1875BD1100EF452B /* Main.storyboard */; };
 		A0D096801855E41300D231F0 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D0967F1855E41300D231F0 /* libstdc++.dylib */; };
 		A0D096821855E42100D231F0 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D096811855E42100D231F0 /* MobileCoreServices.framework */; };
@@ -67,18 +67,18 @@
 		A039ABBE18A4F0510050D6F7 /* craftAR_logo-iPad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "craftAR_logo-iPad@2x.png"; path = "Resources/craftAR_logo-iPad@2x.png"; sourceTree = "<group>"; };
 		A039ABBF18A4F0510050D6F7 /* craftAR_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = craftAR_logo.png; path = Resources/craftAR_logo.png; sourceTree = "<group>"; };
 		A039ABC018A4F0510050D6F7 /* craftAR_logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "craftAR_logo@2x.png"; path = "Resources/craftAR_logo@2x.png"; sourceTree = "<group>"; };
-		A039ABC118A4F0510050D6F7 /* AR_programmatically.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AR_programmatically.png; path = Resources/AR_programmatically.png; sourceTree = "<group>"; };
 		A039ABC218A4F0510050D6F7 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = play.png; path = Resources/play.png; sourceTree = "<group>"; };
 		A039ABC318A4F0510050D6F7 /* play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "play@2x.png"; path = "Resources/play@2x.png"; sourceTree = "<group>"; };
 		A039ABC418A4F0510050D6F7 /* questionMark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = questionMark.png; path = Resources/questionMark.png; sourceTree = "<group>"; };
 		A039ABC518A4F0510050D6F7 /* questionMark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "questionMark@2x.png"; path = "Resources/questionMark@2x.png"; sourceTree = "<group>"; };
 		A039ABD218A4F2D60050D6F7 /* AR from CraftAR service.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "AR from CraftAR service.jpg"; path = "Reference images/AR from CraftAR service.jpg"; sourceTree = "<group>"; };
-		A039ABD318A4F2D60050D6F7 /* AR programmatically.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AR programmatically.png"; path = "Reference images/AR programmatically.png"; sourceTree = "<group>"; };
 		A039ABD418A4F2D60050D6F7 /* Recognition only.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Recognition only.jpg"; path = "Reference images/Recognition only.jpg"; sourceTree = "<group>"; };
 		A039ABD818A917EF0050D6F7 /* CatchoomSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = CatchoomSDK.bundle; path = ExternalFrameworks/CatchoomSDK.bundle; sourceTree = "<group>"; };
 		A039ABDA18A91F410050D6F7 /* AR_fromCraftARViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AR_fromCraftARViewController.h; sourceTree = "<group>"; };
 		A039ABDB18A91F410050D6F7 /* AR_fromCraftARViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AR_fromCraftARViewController.m; sourceTree = "<group>"; };
 		A039ABDC18A91F410050D6F7 /* AR_fromCraftAR.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AR_fromCraftAR.storyboard; sourceTree = "<group>"; };
+		A039ABE118AA6C450050D6F7 /* AR_programmatically_content.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AR_programmatically_content.png; path = Resources/AR_programmatically_content.png; sourceTree = "<group>"; };
+		A039ABE318AA6CC00050D6F7 /* AR programmatically.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "AR programmatically.jpg"; path = "Reference images/AR programmatically.jpg"; sourceTree = "<group>"; };
 		A084A2FB1875BD1100EF452B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A0D0967F1855E41300D231F0 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		A0D096811855E42100D231F0 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
@@ -172,6 +172,7 @@
 		A01F3DAB18460A88003D8D62 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A039ABE118AA6C450050D6F7 /* AR_programmatically_content.png */,
 				A039ABD818A917EF0050D6F7 /* CatchoomSDK.bundle */,
 				A039ABBB18A4F0510050D6F7 /* AR_from_CraftAR.png */,
 				A039ABBC18A4F0510050D6F7 /* craftAR_c.png */,
@@ -179,7 +180,6 @@
 				A039ABBE18A4F0510050D6F7 /* craftAR_logo-iPad@2x.png */,
 				A039ABBF18A4F0510050D6F7 /* craftAR_logo.png */,
 				A039ABC018A4F0510050D6F7 /* craftAR_logo@2x.png */,
-				A039ABC118A4F0510050D6F7 /* AR_programmatically.png */,
 				A039ABC218A4F0510050D6F7 /* play.png */,
 				A039ABC318A4F0510050D6F7 /* play@2x.png */,
 				A039ABC418A4F0510050D6F7 /* questionMark.png */,
@@ -221,8 +221,8 @@
 		A039ABB918A4E0360050D6F7 /* Reference images */ = {
 			isa = PBXGroup;
 			children = (
+				A039ABE318AA6CC00050D6F7 /* AR programmatically.jpg */,
 				A039ABD218A4F2D60050D6F7 /* AR from CraftAR service.jpg */,
-				A039ABD318A4F2D60050D6F7 /* AR programmatically.png */,
 				A039ABD418A4F2D60050D6F7 /* Recognition only.jpg */,
 			);
 			name = "Reference images";
@@ -283,14 +283,15 @@
 				A084A2FC1875BD1100EF452B /* Main.storyboard in Resources */,
 				A01F3D821845FA5A003D8D62 /* InfoPlist.strings in Resources */,
 				A0F1DF2F184E5269006E20A0 /* Images.xcassets in Resources */,
-				A039ABD618A4F2D60050D6F7 /* AR programmatically.png in Resources */,
 				A039ABCB18A4F0510050D6F7 /* craftAR_logo.png in Resources */,
 				A039ABD918A917EF0050D6F7 /* CatchoomSDK.bundle in Resources */,
 				A039ABDE18A91F410050D6F7 /* AR_fromCraftAR.storyboard in Resources */,
+				A039ABE218AA6C450050D6F7 /* AR_programmatically_content.png in Resources */,
 				A039ABD018A4F0510050D6F7 /* questionMark.png in Resources */,
 				A039ABC818A4F0510050D6F7 /* craftAR_c.png in Resources */,
 				A039ABCC18A4F0510050D6F7 /* craftAR_logo@2x.png in Resources */,
 				A01F3E0D1847B0E4003D8D62 /* AR_Programmatically.storyboard in Resources */,
+				A039ABE418AA6CC00050D6F7 /* AR programmatically.jpg in Resources */,
 				A039ABB4189FE2490050D6F7 /* CloudRecognition.storyboard in Resources */,
 				A039ABC718A4F0510050D6F7 /* AR_from_CraftAR.png in Resources */,
 				A039ABCE18A4F0510050D6F7 /* play.png in Resources */,
@@ -300,7 +301,6 @@
 				A039ABCF18A4F0510050D6F7 /* play@2x.png in Resources */,
 				A039ABD118A4F0510050D6F7 /* questionMark@2x.png in Resources */,
 				A039ABC918A4F0510050D6F7 /* craftAR_logo-iPad.png in Resources */,
-				A039ABCD18A4F0510050D6F7 /* AR_programmatically.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
