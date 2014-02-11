@@ -1,7 +1,15 @@
 Changelog
 =========
 
-### Catchoom SDK
+### Catchoom SDK Examples
+
+###### Catchoom SDK Examples 2.1
+* Changed examples to improve usability
+* Added script to detect missing SDK
+* Updated examples to use the Catchoom SDK 2.1
+
+###### Catchoom SDK 2.0
+* Now with Augmented Reality
 
 ###### CRS_SDK 1.2.1
 * Added option to set the maximum number of searches per second on finder mode.
@@ -18,18 +26,4 @@ Changelog
 ###### CRS_SDK 1.0
 * First release
 
----
 
-### Example app
-
-###### CRS_SDK 1.2
-* Using new method to capture images (takeSnapShot), old one (takePreviewSnapShot) 
-has been deprecated
-
-###### CRS_SDK 1.1
-* Tested on iOS 7
-* Changed requirement for xCode 5
-* Changed RestKit framework for lighter one
- 
-###### CRS_SDK 1.0
-* First release
