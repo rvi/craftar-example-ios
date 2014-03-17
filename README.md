@@ -136,9 +136,9 @@ different modules involved.
 Steps for integrating your mobile app with Catchoom and create cool AR
 experiences with the Catchoom SDK:
 
-1.  Create an account at the Catchoom AR Service beta.
-2.  Download the Catchoom SDK for iOS.
-3.  Follow the Quick start guide for iOS to integrate the SDK with your
+1.  Create an account at the [Catchoom Service](http://catchoom.com/).
+2.  Download the [Catchoom SDK](http://catchoom.com/product/mobile-sdk/) for iOS.
+3.  Follow the [Quick Start](#quick-start) section to integrate the SDK with your
     app.
 4.  Create a collection and add some AR items with content.
 
