@@ -15,7 +15,7 @@ This document describes mainly the Examples of different uses of the Service and
 General use of the SDK can be found in the [Documentation section of Catchoom website](http://catchoom.com/documentation/sdk/ios/). Complete SDK documentation of the
 classes can be found within the SDK distribution.
 
-### How to use the examples
+### How to use the examples
 
 This repository comes with an xCode project of an iOS app with several
 examples that show how to use the SDK.
