@@ -7,7 +7,7 @@ experiences using the Catchoom CraftAR Service and its Mobile SDK (‘Mobile SDK
 
 With Catchoom, you can create amazing apps that provide digital content
 for real-life objects like printed media, packaging among others. You
-can use our online web panel or APIs, to upload images to be recognized and set
+can use our online web panel or APIs, to upload images to be recognised and set
 AR content to display upon recognition in your Catchoom-powered
 app.
 
@@ -32,8 +32,10 @@ To run the examples follow these steps:
 
 #### Requirements
 
-To build the project or use the library, you will need XCode 5 or newer,
+To build the project or use the library, you will need XCode 5.1 or newer,
 and at least the iOS 6.0 library.
+
+This example works with the Catchoom SDK version 2.3. If you have an earlier version, please update to the newest one.
 
 #### Step-by-step guide
 1.  Download the [Catchoom SDK](http://catchoom.com/product/mobile-sdk/) for iOS.
@@ -41,5 +43,15 @@ and at least the iOS 6.0 library.
 3.  Drag the following files into the project:
  * CatchoomSDK.framework
  * CatchoomSDK.bundle
- * AFNetrowking.framework
+ * Pods.framework
+ 
+ 
+#### Advanced configuration
 
+The Pods.framework provided with the SDK, contains the Pods dependencies used in the CatchoomSDK. If you are using cocoa pods in your project, you can remove the framework and add the dependencies to your *Podfile* this is how ours looks like:
+
+```
+workspace 'catchoom-sdk-workspace'
+platform :ios, '7.1'
+pod 'AFDownloadRequestOperation', '2.0.1'
+```
