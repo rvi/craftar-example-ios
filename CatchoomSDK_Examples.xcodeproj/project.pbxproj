@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A00B8B4318844F7C000989AA /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A00B8B4218844F7C000989AA /* AFNetworking.framework */; };
 		A01C7EE0184F2C30002DDAD8 /* CatchoomSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A01C7EDF184F2C30002DDAD8 /* CatchoomSDK.framework */; };
 		A01F3D821845FA5A003D8D62 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A01F3D801845FA5A003D8D62 /* InfoPlist.strings */; };
 		A01F3D841845FA5A003D8D62 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A01F3D831845FA5A003D8D62 /* main.m */; };
@@ -34,8 +33,9 @@
 		A039ABDE18A91F410050D6F7 /* AR_fromCraftAR.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A039ABDC18A91F410050D6F7 /* AR_fromCraftAR.storyboard */; };
 		A039ABE218AA6C450050D6F7 /* AR_programmatically_content.png in Resources */ = {isa = PBXBuildFile; fileRef = A039ABE118AA6C450050D6F7 /* AR_programmatically_content.png */; };
 		A039ABE418AA6CC00050D6F7 /* AR programmatically.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A039ABE318AA6CC00050D6F7 /* AR programmatically.jpg */; };
+		A03F93451990D133003ED8B1 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A03F93441990D133003ED8B1 /* Pods.framework */; };
+		A03F93471990D270003ED8B1 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A03F93461990D270003ED8B1 /* libc++.dylib */; };
 		A084A2FC1875BD1100EF452B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A084A2FB1875BD1100EF452B /* Main.storyboard */; };
-		A0D096801855E41300D231F0 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D0967F1855E41300D231F0 /* libstdc++.dylib */; };
 		A0D096821855E42100D231F0 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D096811855E42100D231F0 /* MobileCoreServices.framework */; };
 		A0D096841855E42F00D231F0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D096831855E42F00D231F0 /* SystemConfiguration.framework */; };
 		A0D096881855E45000D231F0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D096871855E45000D231F0 /* AVFoundation.framework */; };
@@ -44,7 +44,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A00B8B4218844F7C000989AA /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = CatchoomSDK_Examples/ExternalFrameworks/AFNetworking.framework; sourceTree = "<group>"; };
 		A01C7EDF184F2C30002DDAD8 /* CatchoomSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CatchoomSDK.framework; path = CatchoomSDK_Examples/ExternalFrameworks/CatchoomSDK.framework; sourceTree = "<group>"; };
 		A01F3D741845FA5A003D8D62 /* CatchoomSDK_Examples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatchoomSDK_Examples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A01F3D7F1845FA5A003D8D62 /* CatchoomSDK_Examples-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CatchoomSDK_Examples-Info.plist"; sourceTree = "<group>"; };
@@ -79,8 +78,9 @@
 		A039ABDC18A91F410050D6F7 /* AR_fromCraftAR.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AR_fromCraftAR.storyboard; sourceTree = "<group>"; };
 		A039ABE118AA6C450050D6F7 /* AR_programmatically_content.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AR_programmatically_content.png; path = Resources/AR_programmatically_content.png; sourceTree = "<group>"; };
 		A039ABE318AA6CC00050D6F7 /* AR programmatically.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "AR programmatically.jpg"; path = "Reference images/AR programmatically.jpg"; sourceTree = "<group>"; };
+		A03F93441990D133003ED8B1 /* Pods.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods.framework; path = CatchoomSDK_Examples/ExternalFrameworks/Pods.framework; sourceTree = "<group>"; };
+		A03F93461990D270003ED8B1 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		A084A2FB1875BD1100EF452B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		A0D0967F1855E41300D231F0 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		A0D096811855E42100D231F0 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		A0D096831855E42F00D231F0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		A0D096851855E43D00D231F0 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
@@ -94,12 +94,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A00B8B4318844F7C000989AA /* AFNetworking.framework in Frameworks */,
+				A03F93471990D270003ED8B1 /* libc++.dylib in Frameworks */,
+				A03F93451990D133003ED8B1 /* Pods.framework in Frameworks */,
 				A0D0968A1855E46C00D231F0 /* CoreMedia.framework in Frameworks */,
 				A0D096881855E45000D231F0 /* AVFoundation.framework in Frameworks */,
 				A0D096841855E42F00D231F0 /* SystemConfiguration.framework in Frameworks */,
 				A0D096821855E42100D231F0 /* MobileCoreServices.framework in Frameworks */,
-				A0D096801855E41300D231F0 /* libstdc++.dylib in Frameworks */,
 				A01C7EE0184F2C30002DDAD8 /* CatchoomSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -127,13 +127,13 @@
 		A01F3D761845FA5A003D8D62 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A00B8B4218844F7C000989AA /* AFNetworking.framework */,
+				A03F93461990D270003ED8B1 /* libc++.dylib */,
+				A03F93441990D133003ED8B1 /* Pods.framework */,
 				A0D096891855E46C00D231F0 /* CoreMedia.framework */,
 				A0D096871855E45000D231F0 /* AVFoundation.framework */,
 				A0D096851855E43D00D231F0 /* CoreFoundation.framework */,
 				A0D096831855E42F00D231F0 /* SystemConfiguration.framework */,
 				A0D096811855E42100D231F0 /* MobileCoreServices.framework */,
-				A0D0967F1855E41300D231F0 /* libstdc++.dylib */,
 				A01C7EDF184F2C30002DDAD8 /* CatchoomSDK.framework */,
 			);
 			name = Frameworks;
@@ -318,7 +318,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ ! -d \"$PROJECT_DIR/CatchoomSDK_Examples/ExternalFrameworks/CatchoomSDK.framework\" ]; then\n    echo \"error: Missing CatchoomSDK files in CatchoomSDK_Examples/ExternalFrameworks/\" 1>&2;\n    osascript $PROJECT_DIR/CatchoomSDK_Examples/scripts/launch_sdk_download \"$PROJECT_DIR\" &\n    exit 1\nfi\n\nif [ ! -d \"$PROJECT_DIR/CatchoomSDK_Examples/ExternalFrameworks/AFNetworking.framework\" ]; then\n    echo \"error: Missing CatchoomSDK files in CatchoomSDK_Examples/ExternalFrameworks/\" 1>&2;\n    osascript $PROJECT_DIR/CatchoomSDK_Examples/scripts/launch_sdk_download \"$PROJECT_DIR\" &\n    exit 1\nfi\n\nif [ ! -d \"$PROJECT_DIR/CatchoomSDK_Examples/ExternalFrameworks/CatchoomSDK.bundle\" ]; then\n    echo \"error: Missing CatchoomSDK files in CatchoomSDK_Examples/ExternalFrameworks/\" 1>&2;\n    osascript $PROJECT_DIR/CatchoomSDK_Examples/scripts/launch_sdk_download \"$PROJECT_DIR\" &\n    exit 1\nfi\n";
+			shellScript = "if [ ! -d \"$PROJECT_DIR/CatchoomSDK_Examples/ExternalFrameworks/CatchoomSDK.framework\" ]; then\n    echo \"error: Missing CatchoomSDK files in CatchoomSDK_Examples/ExternalFrameworks/\" 1>&2;\n    osascript $PROJECT_DIR/CatchoomSDK_Examples/scripts/launch_sdk_download \"$PROJECT_DIR\" &\n    exit 1\nfi\n\nif [ ! -d \"$PROJECT_DIR/CatchoomSDK_Examples/ExternalFrameworks/Pods.framework\" ]; then\n    echo \"error: Missing CatchoomSDK files in CatchoomSDK_Examples/ExternalFrameworks/\" 1>&2;\n    osascript $PROJECT_DIR/CatchoomSDK_Examples/scripts/launch_sdk_download \"$PROJECT_DIR\" &\n    exit 1\nfi\n\nif [ ! -d \"$PROJECT_DIR/CatchoomSDK_Examples/ExternalFrameworks/CatchoomSDK.bundle\" ]; then\n    echo \"error: Missing CatchoomSDK files in CatchoomSDK_Examples/ExternalFrameworks/\" 1>&2;\n    osascript $PROJECT_DIR/CatchoomSDK_Examples/scripts/launch_sdk_download \"$PROJECT_DIR\" &\n    exit 1\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -355,7 +355,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -394,7 +394,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -428,6 +428,7 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -438,7 +439,7 @@
 				GCC_PREFIX_HEADER = "CatchoomSDK_Examples/CatchoomSDK_Examples-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "CatchoomSDK_Examples/CatchoomSDK_Examples-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = CatchoomSDK_Examples;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -454,6 +455,7 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -464,7 +466,7 @@
 				GCC_PREFIX_HEADER = "CatchoomSDK_Examples/CatchoomSDK_Examples-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "CatchoomSDK_Examples/CatchoomSDK_Examples-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = CatchoomSDK_Examples;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";
