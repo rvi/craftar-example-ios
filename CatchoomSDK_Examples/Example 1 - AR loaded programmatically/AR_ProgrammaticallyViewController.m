@@ -101,7 +101,7 @@
             CatchoomARItem* arItem = (CatchoomARItem*)item;
             // Local content creation
             CatchoomTrackingContentImage *image = [[CatchoomTrackingContentImage alloc] initWithImageNamed:@"AR_programmatically_content" ofType:@"png"];
-            image._wrapMode = CATCHOOM_TRACKING_WRAP_ASPECT_FIT;
+            image.wrapMode = CATCHOOM_TRACKING_WRAP_ASPECT_FIT;
             [arItem addContent:image];
             [_tracking addARItem:arItem];
             haveContent = true;

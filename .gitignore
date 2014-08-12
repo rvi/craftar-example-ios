@@ -18,3 +18,4 @@ gitignored_files
 CatchoomSDK_Examples/ExternalFrameworks/AFNetworking.framework
 CatchoomSDK_Examples/ExternalFrameworks/CatchoomSDK.bundle
 CatchoomSDK_Examples/ExternalFrameworks/CatchoomSDK.framework
+CatchoomSDK_Examples/ExternalFrameworks
