@@ -1,18 +1,17 @@
 //
 //  CloudRecognitionSnapPhotoViewController.m
-//  catchoom-sdk-sampleapp
 //
 //  Created by Luis Martinell Andreu on 9/17/13.
 //  Copyright (c) 2013 Catchoom. All rights reserved.
 //
 
 #import "CloudRecognitionOneShotViewController.h"
-#import <CatchoomSDK/CatchoomSDK.h>
-#import <CatchoomSDK/CatchoomCloudRecognitionItem.h>
+#import <CraftARSDK/CraftARSDK.h>
+#import <CraftARSDK/CraftARItem.h>
 
-@interface CloudRecognitionOneShotViewController () <CatchoomSDKProtocol, CatchoomCloudRecognitionProtocol> {
-    CatchoomSDK *_sdk;
-    CatchoomCloudRecognition *_crs;
+@interface CloudRecognitionOneShotViewController () <CraftARSDKProtocol, CraftARCloudRecognitionProtocol> {
+    CraftARSDK *_sdk;
+    CraftARCloudRecognition *_crs;
 }
 
 @end
@@ -34,8 +33,8 @@
 {
     [super viewDidLoad];
     
-    // setup the Catchoom SDK
-    _sdk = [CatchoomSDK sharedCatchoomSDK];
+    // setup the CraftAR SDK
+    _sdk = [CraftARSDK sharedCraftARSDK];
     _sdk.delegate = self;
     
     _crs = [_sdk getCloudRecognitionInterface];
@@ -71,7 +70,7 @@
     
     if ([resultItems count] >= 1) {
         // Found one item, launch its content on a webView:
-        CatchoomCloudRecognitionItem *item = [resultItems objectAtIndex:0];
+        CraftARItem *item = [resultItems objectAtIndex:0];
         
         // Open URL in Webview
         UIViewController *webViewController = [[UIViewController alloc] init];
@@ -99,7 +98,7 @@
     [_sdk unfreezeCapture];
 }
 
-- (void) didFailWithError:(CatchoomSDKError *)error {
+- (void) didFailWithError:(CraftARSDKError *)error {
     // Check the error type
     NSLog(@"Error calling CRS: %@", [error localizedDescription]);
     self._previewOverlay.hidden = NO;

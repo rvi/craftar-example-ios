@@ -1,4 +1,4 @@
-// CatchoomSDK_Examples is free software. You may use it under the MIT license, which is copied
+// CraftARSDK_Examples is free software. You may use it under the MIT license, which is copied
 // below and available at http://opensource.org/licenses/MIT
 //
 // Copyright (c) 2014 Catchoom Technologies S.L.
@@ -22,16 +22,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MainScreenViewController : UIViewController
+@interface AR_fromCraftARViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UIButton* _helloWorldButton;
-@property (weak, nonatomic) IBOutlet UIButton* _contentCreationButton;
-@property (weak, nonatomic) IBOutlet UIButton* _recognitionOnlyButton;
-
-- (IBAction)buttonPressed:(id)sender;
-
-
-- (IBAction)signUpURL:(id)sender;
-- (IBAction)craftARProductURL:(id)sender;
+@property (weak, nonatomic) IBOutlet UIView *videoPreviewView;
+@property (weak, nonatomic) IBOutlet UIView *_scanOverlay;
 
 @end

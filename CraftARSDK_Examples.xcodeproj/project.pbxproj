@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A01C7EE0184F2C30002DDAD8 /* CatchoomSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A01C7EDF184F2C30002DDAD8 /* CatchoomSDK.framework */; };
 		A01F3D821845FA5A003D8D62 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A01F3D801845FA5A003D8D62 /* InfoPlist.strings */; };
 		A01F3D841845FA5A003D8D62 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A01F3D831845FA5A003D8D62 /* main.m */; };
 		A01F3D881845FA5A003D8D62 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A01F3D871845FA5A003D8D62 /* AppDelegate.m */; };
@@ -28,13 +27,17 @@
 		A039ABD118A4F0510050D6F7 /* questionMark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A039ABC518A4F0510050D6F7 /* questionMark@2x.png */; };
 		A039ABD518A4F2D60050D6F7 /* AR from CraftAR service.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A039ABD218A4F2D60050D6F7 /* AR from CraftAR service.jpg */; };
 		A039ABD718A4F2D60050D6F7 /* Recognition only.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A039ABD418A4F2D60050D6F7 /* Recognition only.jpg */; };
-		A039ABD918A917EF0050D6F7 /* CatchoomSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A039ABD818A917EF0050D6F7 /* CatchoomSDK.bundle */; };
 		A039ABDD18A91F410050D6F7 /* AR_fromCraftARViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A039ABDB18A91F410050D6F7 /* AR_fromCraftARViewController.m */; };
 		A039ABDE18A91F410050D6F7 /* AR_fromCraftAR.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A039ABDC18A91F410050D6F7 /* AR_fromCraftAR.storyboard */; };
 		A039ABE218AA6C450050D6F7 /* AR_programmatically_content.png in Resources */ = {isa = PBXBuildFile; fileRef = A039ABE118AA6C450050D6F7 /* AR_programmatically_content.png */; };
 		A039ABE418AA6CC00050D6F7 /* AR programmatically.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A039ABE318AA6CC00050D6F7 /* AR programmatically.jpg */; };
-		A03F93451990D133003ED8B1 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A03F93441990D133003ED8B1 /* Pods.framework */; };
 		A03F93471990D270003ED8B1 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A03F93461990D270003ED8B1 /* libc++.dylib */; };
+		A053E8D41A2480C300A30C49 /* CraftARPods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A053E8D21A2480C300A30C49 /* CraftARPods.framework */; };
+		A053E8D51A2480C300A30C49 /* CraftARPods.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A053E8D21A2480C300A30C49 /* CraftARPods.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A053E8D61A2480C300A30C49 /* CraftARSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A053E8D31A2480C300A30C49 /* CraftARSDK.framework */; };
+		A053E8D71A2480C300A30C49 /* CraftARSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A053E8D31A2480C300A30C49 /* CraftARSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A053E8DA1A2480DE00A30C49 /* CraftARSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A053E8D91A2480DE00A30C49 /* CraftARSDK.bundle */; };
+		A053E8DC1A24817F00A30C49 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A053E8DB1A24817F00A30C49 /* QuartzCore.framework */; };
 		A084A2FC1875BD1100EF452B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A084A2FB1875BD1100EF452B /* Main.storyboard */; };
 		A0D096821855E42100D231F0 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D096811855E42100D231F0 /* MobileCoreServices.framework */; };
 		A0D096841855E42F00D231F0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D096831855E42F00D231F0 /* SystemConfiguration.framework */; };
@@ -43,13 +46,27 @@
 		A0F1DF2F184E5269006E20A0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0F1DF2E184E5269006E20A0 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A053E8D81A2480C300A30C49 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A053E8D51A2480C300A30C49 /* CraftARPods.framework in Embed Frameworks */,
+				A053E8D71A2480C300A30C49 /* CraftARSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		A01C7EDF184F2C30002DDAD8 /* CatchoomSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CatchoomSDK.framework; path = CatchoomSDK_Examples/ExternalFrameworks/CatchoomSDK.framework; sourceTree = "<group>"; };
-		A01F3D741845FA5A003D8D62 /* CatchoomSDK_Examples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatchoomSDK_Examples.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A01F3D7F1845FA5A003D8D62 /* CatchoomSDK_Examples-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CatchoomSDK_Examples-Info.plist"; sourceTree = "<group>"; };
+		A01F3D741845FA5A003D8D62 /* CraftARSDK_Examples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CraftARSDK_Examples.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A01F3D7F1845FA5A003D8D62 /* CraftARSDK_Examples-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CraftARSDK_Examples-Info.plist"; sourceTree = "<group>"; };
 		A01F3D811845FA5A003D8D62 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A01F3D831845FA5A003D8D62 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A01F3D851845FA5A003D8D62 /* CatchoomSDK_Examples-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CatchoomSDK_Examples-Prefix.pch"; sourceTree = "<group>"; };
+		A01F3D851845FA5A003D8D62 /* CraftARSDK_Examples-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CraftARSDK_Examples-Prefix.pch"; sourceTree = "<group>"; };
 		A01F3D861845FA5A003D8D62 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A01F3D871845FA5A003D8D62 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A01F3DA81846043C003D8D62 /* MainScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainScreenViewController.h; sourceTree = "<group>"; };
@@ -72,14 +89,16 @@
 		A039ABC518A4F0510050D6F7 /* questionMark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "questionMark@2x.png"; path = "Resources/questionMark@2x.png"; sourceTree = "<group>"; };
 		A039ABD218A4F2D60050D6F7 /* AR from CraftAR service.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "AR from CraftAR service.jpg"; path = "Reference images/AR from CraftAR service.jpg"; sourceTree = "<group>"; };
 		A039ABD418A4F2D60050D6F7 /* Recognition only.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Recognition only.jpg"; path = "Reference images/Recognition only.jpg"; sourceTree = "<group>"; };
-		A039ABD818A917EF0050D6F7 /* CatchoomSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = CatchoomSDK.bundle; path = ExternalFrameworks/CatchoomSDK.bundle; sourceTree = "<group>"; };
 		A039ABDA18A91F410050D6F7 /* AR_fromCraftARViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AR_fromCraftARViewController.h; sourceTree = "<group>"; };
 		A039ABDB18A91F410050D6F7 /* AR_fromCraftARViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AR_fromCraftARViewController.m; sourceTree = "<group>"; };
 		A039ABDC18A91F410050D6F7 /* AR_fromCraftAR.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AR_fromCraftAR.storyboard; sourceTree = "<group>"; };
 		A039ABE118AA6C450050D6F7 /* AR_programmatically_content.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AR_programmatically_content.png; path = Resources/AR_programmatically_content.png; sourceTree = "<group>"; };
 		A039ABE318AA6CC00050D6F7 /* AR programmatically.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "AR programmatically.jpg"; path = "Reference images/AR programmatically.jpg"; sourceTree = "<group>"; };
-		A03F93441990D133003ED8B1 /* Pods.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods.framework; path = CatchoomSDK_Examples/ExternalFrameworks/Pods.framework; sourceTree = "<group>"; };
 		A03F93461990D270003ED8B1 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		A053E8D21A2480C300A30C49 /* CraftARPods.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CraftARPods.framework; path = CraftARSDK_Examples/ExternalFrameworks/CraftARPods.framework; sourceTree = "<group>"; };
+		A053E8D31A2480C300A30C49 /* CraftARSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CraftARSDK.framework; path = CraftARSDK_Examples/ExternalFrameworks/CraftARSDK.framework; sourceTree = "<group>"; };
+		A053E8D91A2480DE00A30C49 /* CraftARSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = CraftARSDK.bundle; path = ExternalFrameworks/CraftARSDK.bundle; sourceTree = "<group>"; };
+		A053E8DB1A24817F00A30C49 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		A084A2FB1875BD1100EF452B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A0D096811855E42100D231F0 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		A0D096831855E42F00D231F0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -94,13 +113,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A053E8DC1A24817F00A30C49 /* QuartzCore.framework in Frameworks */,
 				A03F93471990D270003ED8B1 /* libc++.dylib in Frameworks */,
-				A03F93451990D133003ED8B1 /* Pods.framework in Frameworks */,
 				A0D0968A1855E46C00D231F0 /* CoreMedia.framework in Frameworks */,
+				A053E8D41A2480C300A30C49 /* CraftARPods.framework in Frameworks */,
+				A053E8D61A2480C300A30C49 /* CraftARSDK.framework in Frameworks */,
 				A0D096881855E45000D231F0 /* AVFoundation.framework in Frameworks */,
 				A0D096841855E42F00D231F0 /* SystemConfiguration.framework in Frameworks */,
 				A0D096821855E42100D231F0 /* MobileCoreServices.framework in Frameworks */,
-				A01C7EE0184F2C30002DDAD8 /* CatchoomSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,7 +130,9 @@
 		A01F3D6B1845FA5A003D8D62 = {
 			isa = PBXGroup;
 			children = (
-				A01F3D7D1845FA5A003D8D62 /* CatchoomSDK_Examples */,
+				A053E8D21A2480C300A30C49 /* CraftARPods.framework */,
+				A053E8D31A2480C300A30C49 /* CraftARSDK.framework */,
+				A01F3D7D1845FA5A003D8D62 /* CraftARSDK_Examples */,
 				A01F3D761845FA5A003D8D62 /* Frameworks */,
 				A01F3D751845FA5A003D8D62 /* Products */,
 			);
@@ -119,7 +141,7 @@
 		A01F3D751845FA5A003D8D62 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A01F3D741845FA5A003D8D62 /* CatchoomSDK_Examples.app */,
+				A01F3D741845FA5A003D8D62 /* CraftARSDK_Examples.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,19 +149,18 @@
 		A01F3D761845FA5A003D8D62 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A053E8DB1A24817F00A30C49 /* QuartzCore.framework */,
 				A03F93461990D270003ED8B1 /* libc++.dylib */,
-				A03F93441990D133003ED8B1 /* Pods.framework */,
 				A0D096891855E46C00D231F0 /* CoreMedia.framework */,
 				A0D096871855E45000D231F0 /* AVFoundation.framework */,
 				A0D096851855E43D00D231F0 /* CoreFoundation.framework */,
 				A0D096831855E42F00D231F0 /* SystemConfiguration.framework */,
 				A0D096811855E42100D231F0 /* MobileCoreServices.framework */,
-				A01C7EDF184F2C30002DDAD8 /* CatchoomSDK.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A01F3D7D1845FA5A003D8D62 /* CatchoomSDK_Examples */ = {
+		A01F3D7D1845FA5A003D8D62 /* CraftARSDK_Examples */ = {
 			isa = PBXGroup;
 			children = (
 				A01F3E011847B0E4003D8D62 /* Example 1 - AR loaded programmatically */,
@@ -155,16 +176,17 @@
 				A0F1DF2E184E5269006E20A0 /* Images.xcassets */,
 				A01F3D7E1845FA5A003D8D62 /* Supporting Files */,
 			);
-			path = CatchoomSDK_Examples;
+			name = CraftARSDK_Examples;
+			path = CraftARSDK_Examples;
 			sourceTree = "<group>";
 		};
 		A01F3D7E1845FA5A003D8D62 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A01F3D7F1845FA5A003D8D62 /* CatchoomSDK_Examples-Info.plist */,
+				A01F3D7F1845FA5A003D8D62 /* CraftARSDK_Examples-Info.plist */,
 				A01F3D801845FA5A003D8D62 /* InfoPlist.strings */,
 				A01F3D831845FA5A003D8D62 /* main.m */,
-				A01F3D851845FA5A003D8D62 /* CatchoomSDK_Examples-Prefix.pch */,
+				A01F3D851845FA5A003D8D62 /* CraftARSDK_Examples-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -172,8 +194,8 @@
 		A01F3DAB18460A88003D8D62 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A053E8D91A2480DE00A30C49 /* CraftARSDK.bundle */,
 				A039ABE118AA6C450050D6F7 /* AR_programmatically_content.png */,
-				A039ABD818A917EF0050D6F7 /* CatchoomSDK.bundle */,
 				A039ABBB18A4F0510050D6F7 /* AR_from_CraftAR.png */,
 				A039ABBC18A4F0510050D6F7 /* craftAR_c.png */,
 				A039ABBD18A4F0510050D6F7 /* craftAR_logo-iPad.png */,
@@ -231,22 +253,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A01F3D731845FA5A003D8D62 /* CatchoomSDK_Examples */ = {
+		A01F3D731845FA5A003D8D62 /* CraftARSDK_Examples */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A01F3DA01845FA5B003D8D62 /* Build configuration list for PBXNativeTarget "CatchoomSDK_Examples" */;
+			buildConfigurationList = A01F3DA01845FA5B003D8D62 /* Build configuration list for PBXNativeTarget "CraftARSDK_Examples" */;
 			buildPhases = (
 				A039ABAA18991F4C0050D6F7 /* ShellScript */,
 				A01F3D701845FA5A003D8D62 /* Sources */,
 				A01F3D711845FA5A003D8D62 /* Frameworks */,
 				A01F3D721845FA5A003D8D62 /* Resources */,
+				A053E8D81A2480C300A30C49 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = CatchoomSDK_Examples;
-			productName = CatchoomSDK_Examples;
-			productReference = A01F3D741845FA5A003D8D62 /* CatchoomSDK_Examples.app */;
+			name = CraftARSDK_Examples;
+			productName = CraftARSDK_Examples;
+			productReference = A01F3D741845FA5A003D8D62 /* CraftARSDK_Examples.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -258,7 +281,7 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Luis Martinell Andreu";
 			};
-			buildConfigurationList = A01F3D6F1845FA5A003D8D62 /* Build configuration list for PBXProject "CatchoomSDK_Examples" */;
+			buildConfigurationList = A01F3D6F1845FA5A003D8D62 /* Build configuration list for PBXProject "CraftARSDK_Examples" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -270,7 +293,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A01F3D731845FA5A003D8D62 /* CatchoomSDK_Examples */,
+				A01F3D731845FA5A003D8D62 /* CraftARSDK_Examples */,
 			);
 		};
 /* End PBXProject section */
@@ -284,7 +307,6 @@
 				A01F3D821845FA5A003D8D62 /* InfoPlist.strings in Resources */,
 				A0F1DF2F184E5269006E20A0 /* Images.xcassets in Resources */,
 				A039ABCB18A4F0510050D6F7 /* craftAR_logo.png in Resources */,
-				A039ABD918A917EF0050D6F7 /* CatchoomSDK.bundle in Resources */,
 				A039ABDE18A91F410050D6F7 /* AR_fromCraftAR.storyboard in Resources */,
 				A039ABE218AA6C450050D6F7 /* AR_programmatically_content.png in Resources */,
 				A039ABD018A4F0510050D6F7 /* questionMark.png in Resources */,
@@ -300,6 +322,7 @@
 				A039ABD718A4F2D60050D6F7 /* Recognition only.jpg in Resources */,
 				A039ABCF18A4F0510050D6F7 /* play@2x.png in Resources */,
 				A039ABD118A4F0510050D6F7 /* questionMark@2x.png in Resources */,
+				A053E8DA1A2480DE00A30C49 /* CraftARSDK.bundle in Resources */,
 				A039ABC918A4F0510050D6F7 /* craftAR_logo-iPad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,7 +341,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ ! -d \"$PROJECT_DIR/CatchoomSDK_Examples/ExternalFrameworks/CatchoomSDK.framework\" ]; then\n    echo \"error: Missing CatchoomSDK files in CatchoomSDK_Examples/ExternalFrameworks/\" 1>&2;\n    osascript $PROJECT_DIR/CatchoomSDK_Examples/scripts/launch_sdk_download \"$PROJECT_DIR\" &\n    exit 1\nfi\n\nif [ ! -d \"$PROJECT_DIR/CatchoomSDK_Examples/ExternalFrameworks/Pods.framework\" ]; then\n    echo \"error: Missing CatchoomSDK files in CatchoomSDK_Examples/ExternalFrameworks/\" 1>&2;\n    osascript $PROJECT_DIR/CatchoomSDK_Examples/scripts/launch_sdk_download \"$PROJECT_DIR\" &\n    exit 1\nfi\n\nif [ ! -d \"$PROJECT_DIR/CatchoomSDK_Examples/ExternalFrameworks/CatchoomSDK.bundle\" ]; then\n    echo \"error: Missing CatchoomSDK files in CatchoomSDK_Examples/ExternalFrameworks/\" 1>&2;\n    osascript $PROJECT_DIR/CatchoomSDK_Examples/scripts/launch_sdk_download \"$PROJECT_DIR\" &\n    exit 1\nfi\n";
+			shellScript = "if [ ! -d \"$PROJECT_DIR/CraftARSDK_Examples/ExternalFrameworks/CraftARSDK.framework\" ]; then\n    echo \"error: Missing CatchoomSDK files in CraftARSDK_Examples/ExternalFrameworks/\" 1>&2;\n    osascript $PROJECT_DIR/CraftARSDK_Examples/scripts/launch_sdk_download \"$PROJECT_DIR\" &\n    exit 1\nfi\n\nif [ ! -d \"$PROJECT_DIR/CraftARSDK_Examples/ExternalFrameworks/CraftARPods.framework\" ]; then\n    echo \"error: Missing CatchoomSDK files in CraftARSDK_Examples/ExternalFrameworks/\" 1>&2;\n    osascript $PROJECT_DIR/CraftARSDK_Examples/scripts/launch_sdk_download \"$PROJECT_DIR\" &\n    exit 1\nfi\n\nif [ ! -d \"$PROJECT_DIR/CraftARSDK_Examples/ExternalFrameworks/CraftARSDK.bundle\" ]; then\n    echo \"error: Missing CatchoomSDK files in CraftARSDK_Examples/ExternalFrameworks/\" 1>&2;\n    osascript $PROJECT_DIR/CraftARSDK_Examples/scripts/launch_sdk_download \"$PROJECT_DIR\" &\n    exit 1\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -433,15 +456,16 @@
 				COMPRESS_PNG_FILES = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/CatchoomSDK_Examples/ExternalFrameworks",
+					"$(PROJECT_DIR)/CraftARSDK_Examples/ExternalFrameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CatchoomSDK_Examples/CatchoomSDK_Examples-Prefix.pch";
+				GCC_PREFIX_HEADER = "CraftARSDK_Examples/CraftARSDK_Examples-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = "CatchoomSDK_Examples/CatchoomSDK_Examples-Info.plist";
+				INFOPLIST_FILE = "CraftARSDK_Examples/CraftARSDK_Examples-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_NAME = CatchoomSDK_Examples;
+				PRODUCT_NAME = CraftARSDK_Examples;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";
 				VALID_ARCHS = armv7;
@@ -460,14 +484,15 @@
 				COMPRESS_PNG_FILES = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/CatchoomSDK_Examples/ExternalFrameworks",
+					"$(PROJECT_DIR)/CraftARSDK_Examples/ExternalFrameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CatchoomSDK_Examples/CatchoomSDK_Examples-Prefix.pch";
+				GCC_PREFIX_HEADER = "CraftARSDK_Examples/CraftARSDK_Examples-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = "CatchoomSDK_Examples/CatchoomSDK_Examples-Info.plist";
+				INFOPLIST_FILE = "CraftARSDK_Examples/CraftARSDK_Examples-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = CatchoomSDK_Examples;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = CraftARSDK_Examples;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";
 				VALID_ARCHS = armv7;
@@ -478,7 +503,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A01F3D6F1845FA5A003D8D62 /* Build configuration list for PBXProject "CatchoomSDK_Examples" */ = {
+		A01F3D6F1845FA5A003D8D62 /* Build configuration list for PBXProject "CraftARSDK_Examples" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A01F3D9E1845FA5B003D8D62 /* Debug */,
@@ -487,7 +512,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A01F3DA01845FA5B003D8D62 /* Build configuration list for PBXNativeTarget "CatchoomSDK_Examples" */ = {
+		A01F3DA01845FA5B003D8D62 /* Build configuration list for PBXNativeTarget "CraftARSDK_Examples" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A01F3DA11845FA5B003D8D62 /* Debug */,

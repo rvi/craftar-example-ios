@@ -1,4 +1,4 @@
-// CatchoomSDK_Examples is free software. You may use it under the MIT license, which is copied
+// CraftARSDK_Examples is free software. You may use it under the MIT license, which is copied
 // below and available at http://opensource.org/licenses/MIT
 //
 // Copyright (c) 2014 Catchoom Technologies S.L.
@@ -22,14 +22,14 @@
 
 
 #import "AR_fromCraftARViewController.h"
-#import <CatchoomSDK/CatchoomSDK.h>
+#import <CraftARSDK/CraftARSDK.h>
 
-@interface AR_fromCraftARViewController () <CatchoomSDKProtocol, CatchoomCloudRecognitionProtocol> {
+@interface AR_fromCraftARViewController () <CraftARSDKProtocol, CraftARCloudRecognitionProtocol> {
     // Catchoom SDK reference
-    CatchoomSDK *_sdk;
+    CraftARSDK *_sdk;
     
-    CatchoomCloudRecognition *_cloudRecognition;
-    CatchoomTracking *_tracking;
+    CraftARCloudRecognition *_cloudRecognition;
+    CraftARTracking *_tracking;
     
     bool _isTrackingEnabled;
 }
@@ -50,10 +50,10 @@
 {
     [super viewDidLoad];
     
-    // setup the Catchoom SDK
-    _sdk = [CatchoomSDK sharedCatchoomSDK];
+    // setup the CraftAR SDK
+    _sdk = [CraftARSDK sharedCraftARSDK];
     
-    // Implement the CatchoomSDKProtocol to know when the previewView is ready
+    // Implement the CraftARSDKProtocol to know when the previewView is ready
     [_sdk setDelegate:self];
 }
 
@@ -95,10 +95,10 @@
     [_cloudRecognition stopFinderMode];
     
     // Look for trakcable results
-    for (CatchoomCloudRecognitionItem* item in results) {
+    for (CraftARItem* item in results) {
         
         if (item.getType == ITEM_TYPE_AR) {
-            CatchoomARItem* arItem = (CatchoomARItem *)item;
+            CraftARItemAR* arItem = (CraftARItemAR *)item;
             
             // If the item has contents, add it for an AR experience
             if ([arItem.contents count] > 0) {
@@ -117,7 +117,7 @@
     }
 }
 
-- (void) didFailWithError:(CatchoomSDKError *)error {
+- (void) didFailWithError:(CraftARSDKError *)error {
     NSLog(@"Error: %@", [error localizedDescription]);
 }
 

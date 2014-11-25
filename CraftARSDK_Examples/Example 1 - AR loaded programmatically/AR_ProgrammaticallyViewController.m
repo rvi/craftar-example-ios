@@ -1,4 +1,4 @@
-// CatchoomSDK_Examples is free software. You may use it under the MIT license, which is copied
+// CraftARSDK_Examples is free software. You may use it under the MIT license, which is copied
 // below and available at http://opensource.org/licenses/MIT
 //
 // Copyright (c) 2014 Catchoom Technologies S.L.
@@ -22,14 +22,14 @@
 
 
 #import "AR_ProgrammaticallyViewController.h"
-#import <CatchoomSDK/CatchoomSDK.h>
+#import <CraftARSDK/CraftARSDK.h>
 
-@interface AR_ProgrammaticallyViewController () <CatchoomSDKProtocol, CatchoomCloudRecognitionProtocol> {
-    // Catchoom SDK reference
-    CatchoomSDK *_sdk;
+@interface AR_ProgrammaticallyViewController () <CraftARSDKProtocol, CraftARCloudRecognitionProtocol> {
+    // CraftAR SDK reference
+    CraftARSDK *_sdk;
     
-    CatchoomCloudRecognition *_cloudRecognition;
-    CatchoomTracking *_tracking;
+    CraftARCloudRecognition *_cloudRecognition;
+    CraftARTracking *_tracking;
     
     bool _isTrackingEnabled;
 }
@@ -50,10 +50,10 @@
 {
     [super viewDidLoad];
     
-    // setup the Catchoom SDK
-    _sdk = [CatchoomSDK sharedCatchoomSDK];
+    // setup the CraftAR SDK
+    _sdk = [CraftARSDK sharedCraftARSDK];
     
-    // Implement the CatchoomSDKProtocol to know when the previewView is ready
+    // Implement the CraftARSDKProtocol to know when the previewView is ready
     [_sdk setDelegate:self];
 }
 
@@ -95,13 +95,13 @@
     [_cloudRecognition stopFinderMode];
     
     // Look for trakcable results
-    for (CatchoomCloudRecognitionItem* item in results) {
+    for (CraftARItem* item in results) {
         
         if (item.getType == ITEM_TYPE_AR) {
-            CatchoomARItem* arItem = (CatchoomARItem*)item;
+            CraftARItemAR* arItem = (CraftARItemAR*)item;
             // Local content creation
-            CatchoomTrackingContentImage *image = [[CatchoomTrackingContentImage alloc] initWithImageNamed:@"AR_programmatically_content" ofType:@"png"];
-            image.wrapMode = CATCHOOM_TRACKING_WRAP_ASPECT_FIT;
+            CraftARTrackingContentImage *image = [[CraftARTrackingContentImage alloc] initWithImageNamed:@"AR_programmatically_content" ofType:@"png"];
+            image.wrapMode = CRAFTAR_TRACKING_WRAP_ASPECT_FIT;
             [arItem addContent:image];
             [_tracking addARItem:arItem];
             haveContent = true;
@@ -117,7 +117,7 @@
     }
 }
 
-- (void) didFailWithError:(CatchoomSDKError *)error {
+- (void) didFailWithError:(CraftARSDKError *)error {
     NSLog(@"Error: %@", [error localizedDescription]);
 }
 
