@@ -1,4 +1,4 @@
-// CatchoomSDK_Examples is free software. You may use it under the MIT license, which is copied
+// CraftARSDK_Examples is free software. You may use it under the MIT license, which is copied
 // below and available at http://opensource.org/licenses/MIT
 //
 // Copyright (c) 2014 Catchoom Technologies S.L.
@@ -21,7 +21,7 @@
 // DEALINGS IN THE SOFTWARE.
 
 #import "MainScreenViewController.h"
-#import <CatchoomSDK/CatchoomSDK.h>
+#import <CraftARSDK/CraftARSDK.h>
 
 @interface MainScreenViewController ()
 
@@ -37,7 +37,7 @@
 
 - (IBAction)buttonPressed:(id)sender {
     
-    [[[CatchoomSDK sharedCatchoomSDK] getCloudRecognitionInterface] setToken:@"craftarexamples1"];
+    [[[CraftARSDK sharedCraftARSDK] getCloudRecognitionInterface] setToken:@"craftarexamples1"];
     
     UIViewController *target;
     if (sender == self._helloWorldButton) {
