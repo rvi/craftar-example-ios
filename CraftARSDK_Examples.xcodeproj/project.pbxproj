@@ -32,10 +32,6 @@
 		A039ABE218AA6C450050D6F7 /* AR_programmatically_content.png in Resources */ = {isa = PBXBuildFile; fileRef = A039ABE118AA6C450050D6F7 /* AR_programmatically_content.png */; };
 		A039ABE418AA6CC00050D6F7 /* AR programmatically.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A039ABE318AA6CC00050D6F7 /* AR programmatically.jpg */; };
 		A03F93471990D270003ED8B1 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A03F93461990D270003ED8B1 /* libc++.dylib */; };
-		A053E8D41A2480C300A30C49 /* CraftARPods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A053E8D21A2480C300A30C49 /* CraftARPods.framework */; };
-		A053E8D51A2480C300A30C49 /* CraftARPods.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A053E8D21A2480C300A30C49 /* CraftARPods.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A053E8D61A2480C300A30C49 /* CraftARSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A053E8D31A2480C300A30C49 /* CraftARSDK.framework */; };
-		A053E8D71A2480C300A30C49 /* CraftARSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A053E8D31A2480C300A30C49 /* CraftARSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A053E8DA1A2480DE00A30C49 /* CraftARSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A053E8D91A2480DE00A30C49 /* CraftARSDK.bundle */; };
 		A053E8DC1A24817F00A30C49 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A053E8DB1A24817F00A30C49 /* QuartzCore.framework */; };
 		A084A2FC1875BD1100EF452B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A084A2FB1875BD1100EF452B /* Main.storyboard */; };
@@ -44,6 +40,8 @@
 		A0D096881855E45000D231F0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D096871855E45000D231F0 /* AVFoundation.framework */; };
 		A0D0968A1855E46C00D231F0 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D096891855E46C00D231F0 /* CoreMedia.framework */; };
 		A0F1DF2F184E5269006E20A0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0F1DF2E184E5269006E20A0 /* Images.xcassets */; };
+		C0B1D8451A37595100C1904D /* CraftARSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0B1D8431A37595100C1904D /* CraftARSDK.framework */; };
+		C0B1D8461A37595100C1904D /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0B1D8441A37595100C1904D /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -53,8 +51,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A053E8D51A2480C300A30C49 /* CraftARPods.framework in Embed Frameworks */,
-				A053E8D71A2480C300A30C49 /* CraftARSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,8 +91,6 @@
 		A039ABE118AA6C450050D6F7 /* AR_programmatically_content.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AR_programmatically_content.png; path = Resources/AR_programmatically_content.png; sourceTree = "<group>"; };
 		A039ABE318AA6CC00050D6F7 /* AR programmatically.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "AR programmatically.jpg"; path = "Reference images/AR programmatically.jpg"; sourceTree = "<group>"; };
 		A03F93461990D270003ED8B1 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
-		A053E8D21A2480C300A30C49 /* CraftARPods.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CraftARPods.framework; path = CraftARSDK_Examples/ExternalFrameworks/CraftARPods.framework; sourceTree = "<group>"; };
-		A053E8D31A2480C300A30C49 /* CraftARSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CraftARSDK.framework; path = CraftARSDK_Examples/ExternalFrameworks/CraftARSDK.framework; sourceTree = "<group>"; };
 		A053E8D91A2480DE00A30C49 /* CraftARSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = CraftARSDK.bundle; path = ExternalFrameworks/CraftARSDK.bundle; sourceTree = "<group>"; };
 		A053E8DB1A24817F00A30C49 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		A084A2FB1875BD1100EF452B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -106,6 +100,8 @@
 		A0D096871855E45000D231F0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		A0D096891855E46C00D231F0 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		A0F1DF2E184E5269006E20A0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C0B1D8431A37595100C1904D /* CraftARSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CraftARSDK.framework; path = CraftARSDK_Examples/ExternalFrameworks/CraftARSDK.framework; sourceTree = "<group>"; };
+		C0B1D8441A37595100C1904D /* Pods.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods.framework; path = CraftARSDK_Examples/ExternalFrameworks/Pods.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,11 +109,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0B1D8461A37595100C1904D /* Pods.framework in Frameworks */,
 				A053E8DC1A24817F00A30C49 /* QuartzCore.framework in Frameworks */,
 				A03F93471990D270003ED8B1 /* libc++.dylib in Frameworks */,
 				A0D0968A1855E46C00D231F0 /* CoreMedia.framework in Frameworks */,
-				A053E8D41A2480C300A30C49 /* CraftARPods.framework in Frameworks */,
-				A053E8D61A2480C300A30C49 /* CraftARSDK.framework in Frameworks */,
+				C0B1D8451A37595100C1904D /* CraftARSDK.framework in Frameworks */,
 				A0D096881855E45000D231F0 /* AVFoundation.framework in Frameworks */,
 				A0D096841855E42F00D231F0 /* SystemConfiguration.framework in Frameworks */,
 				A0D096821855E42100D231F0 /* MobileCoreServices.framework in Frameworks */,
@@ -130,8 +126,8 @@
 		A01F3D6B1845FA5A003D8D62 = {
 			isa = PBXGroup;
 			children = (
-				A053E8D21A2480C300A30C49 /* CraftARPods.framework */,
-				A053E8D31A2480C300A30C49 /* CraftARSDK.framework */,
+				C0B1D8431A37595100C1904D /* CraftARSDK.framework */,
+				C0B1D8441A37595100C1904D /* Pods.framework */,
 				A01F3D7D1845FA5A003D8D62 /* CraftARSDK_Examples */,
 				A01F3D761845FA5A003D8D62 /* Frameworks */,
 				A01F3D751845FA5A003D8D62 /* Products */,
@@ -176,7 +172,6 @@
 				A0F1DF2E184E5269006E20A0 /* Images.xcassets */,
 				A01F3D7E1845FA5A003D8D62 /* Supporting Files */,
 			);
-			name = CraftARSDK_Examples;
 			path = CraftARSDK_Examples;
 			sourceTree = "<group>";
 		};
@@ -341,7 +336,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ ! -d \"$PROJECT_DIR/CraftARSDK_Examples/ExternalFrameworks/CraftARSDK.framework\" ]; then\n    echo \"error: Missing CraftARSDK files in CraftARSDK_Examples/ExternalFrameworks/\" 1>&2;\n    osascript $PROJECT_DIR/CraftARSDK_Examples/scripts/launch_sdk_download \"$PROJECT_DIR\" &\n    exit 1\nfi\n\nif [ ! -d \"$PROJECT_DIR/CraftARSDK_Examples/ExternalFrameworks/CraftARPods.framework\" ]; then\n    echo \"error: Missing CatchoomSDK files in CraftARSDK_Examples/ExternalFrameworks/\" 1>&2;\n    osascript $PROJECT_DIR/CraftARSDK_Examples/scripts/launch_sdk_download \"$PROJECT_DIR\" &\n    exit 1\nfi\n\nif [ ! -d \"$PROJECT_DIR/CraftARSDK_Examples/ExternalFrameworks/CraftARSDK.bundle\" ]; then\n    echo \"error: Missing CraftARSDK files in CraftARSDK_Examples/ExternalFrameworks/\" 1>&2;\n    osascript $PROJECT_DIR/CraftARSDK_Examples/scripts/launch_sdk_download \"$PROJECT_DIR\" &\n    exit 1\nfi\n";
+			shellScript = "if [ ! -d \"$PROJECT_DIR/CraftARSDK_Examples/ExternalFrameworks/CraftARSDK.framework\" ]; then\n    echo \"error: Missing CraftARSDK files in CraftARSDK_Examples/ExternalFrameworks/\" 1>&2;\n    osascript $PROJECT_DIR/CraftARSDK_Examples/scripts/launch_sdk_download \"$PROJECT_DIR\" &\n    exit 1\nfi\n\nif [ ! -d \"$PROJECT_DIR/CraftARSDK_Examples/ExternalFrameworks/Pods.framework\" ]; then\n    echo \"error: Missing CatchoomSDK files in CraftARSDK_Examples/ExternalFrameworks/\" 1>&2;\n    osascript $PROJECT_DIR/CraftARSDK_Examples/scripts/launch_sdk_download \"$PROJECT_DIR\" &\n    exit 1\nfi\n\nif [ ! -d \"$PROJECT_DIR/CraftARSDK_Examples/ExternalFrameworks/CraftARSDK.bundle\" ]; then\n    echo \"error: Missing CraftARSDK files in CraftARSDK_Examples/ExternalFrameworks/\" 1>&2;\n    osascript $PROJECT_DIR/CraftARSDK_Examples/scripts/launch_sdk_download \"$PROJECT_DIR\" &\n    exit 1\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
