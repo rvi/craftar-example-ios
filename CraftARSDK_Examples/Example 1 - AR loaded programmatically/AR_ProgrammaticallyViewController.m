@@ -31,7 +31,9 @@
     CraftARCloudRecognition *_cloudRecognition;
     CraftARTracking *_tracking;
     
+    CraftARItemAR *myItem;
     bool _isTrackingEnabled;
+    bool _isPinned;
 }
 @end
 
@@ -98,12 +100,12 @@
     for (CraftARItem* item in results) {
         
         if (item.getType == ITEM_TYPE_AR) {
-            CraftARItemAR* arItem = (CraftARItemAR*)item;
+            myItem = (CraftARItemAR*)item;
             // Local content creation
             CraftARTrackingContentImage *image = [[CraftARTrackingContentImage alloc] initWithImageNamed:@"AR_programmatically_content" ofType:@"png"];
             image.wrapMode = CRAFTAR_TRACKING_WRAP_ASPECT_FIT;
-            [arItem addContent:image];
-            [_tracking addARItem:arItem];
+            [myItem addContent:image];
+            [_tracking addARItem:myItem];
             haveContent = true;
         }
     }
@@ -114,6 +116,18 @@
         self._scanOverlay.hidden = true;
     } else {
         [_cloudRecognition startFinderMode];
+    }
+}
+
+- (IBAction)pinContents:(id)sender {
+    if (!_isPinned && _isTrackingEnabled) {
+        myItem.drawOffTracking = YES;
+        _isTrackingEnabled = false;
+        [_tracking stopTracking];
+    } else {
+        myItem.drawOffTracking = NO;
+        _isTrackingEnabled = true;
+        [_tracking startTracking];
     }
 }
 
