@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		60077690D69818F922FB74FB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03FD8577D945AB345B902BB2 /* libPods.a */; };
 		A01F3D821845FA5A003D8D62 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A01F3D801845FA5A003D8D62 /* InfoPlist.strings */; };
 		A01F3D841845FA5A003D8D62 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A01F3D831845FA5A003D8D62 /* main.m */; };
 		A01F3D881845FA5A003D8D62 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A01F3D871845FA5A003D8D62 /* AppDelegate.m */; };
@@ -41,7 +42,6 @@
 		A0D0968A1855E46C00D231F0 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D096891855E46C00D231F0 /* CoreMedia.framework */; };
 		A0F1DF2F184E5269006E20A0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0F1DF2E184E5269006E20A0 /* Images.xcassets */; };
 		C0B1D8451A37595100C1904D /* CraftARSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0B1D8431A37595100C1904D /* CraftARSDK.framework */; };
-		C0B1D8461A37595100C1904D /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0B1D8441A37595100C1904D /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -58,6 +58,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		03FD8577D945AB345B902BB2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F52B503DCA3CC907429AA8C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		6443FFE8D50C4B8B4C499E6D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A01F3D741845FA5A003D8D62 /* CraftARSDK_Examples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CraftARSDK_Examples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A01F3D7F1845FA5A003D8D62 /* CraftARSDK_Examples-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CraftARSDK_Examples-Info.plist"; sourceTree = "<group>"; };
 		A01F3D811845FA5A003D8D62 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -101,7 +104,6 @@
 		A0D096891855E46C00D231F0 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		A0F1DF2E184E5269006E20A0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C0B1D8431A37595100C1904D /* CraftARSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CraftARSDK.framework; path = CraftARSDK_Examples/ExternalFrameworks/CraftARSDK.framework; sourceTree = "<group>"; };
-		C0B1D8441A37595100C1904D /* Pods.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods.framework; path = CraftARSDK_Examples/ExternalFrameworks/Pods.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +111,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0B1D8461A37595100C1904D /* Pods.framework in Frameworks */,
 				A053E8DC1A24817F00A30C49 /* QuartzCore.framework in Frameworks */,
 				A03F93471990D270003ED8B1 /* libc++.dylib in Frameworks */,
 				A0D0968A1855E46C00D231F0 /* CoreMedia.framework in Frameworks */,
@@ -117,6 +118,7 @@
 				A0D096881855E45000D231F0 /* AVFoundation.framework in Frameworks */,
 				A0D096841855E42F00D231F0 /* SystemConfiguration.framework in Frameworks */,
 				A0D096821855E42100D231F0 /* MobileCoreServices.framework in Frameworks */,
+				60077690D69818F922FB74FB /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,10 +129,10 @@
 			isa = PBXGroup;
 			children = (
 				C0B1D8431A37595100C1904D /* CraftARSDK.framework */,
-				C0B1D8441A37595100C1904D /* Pods.framework */,
 				A01F3D7D1845FA5A003D8D62 /* CraftARSDK_Examples */,
 				A01F3D761845FA5A003D8D62 /* Frameworks */,
 				A01F3D751845FA5A003D8D62 /* Products */,
+				B27FE1FD7FE264D0B7A60BB9 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -152,6 +154,7 @@
 				A0D096851855E43D00D231F0 /* CoreFoundation.framework */,
 				A0D096831855E42F00D231F0 /* SystemConfiguration.framework */,
 				A0D096811855E42100D231F0 /* MobileCoreServices.framework */,
+				03FD8577D945AB345B902BB2 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -245,6 +248,15 @@
 			name = "Reference images";
 			sourceTree = "<group>";
 		};
+		B27FE1FD7FE264D0B7A60BB9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2F52B503DCA3CC907429AA8C /* Pods.debug.xcconfig */,
+				6443FFE8D50C4B8B4C499E6D /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -252,11 +264,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A01F3DA01845FA5B003D8D62 /* Build configuration list for PBXNativeTarget "CraftARSDK_Examples" */;
 			buildPhases = (
+				A4DD04862531702E660332C8 /* Check Pods Manifest.lock */,
 				A039ABAA18991F4C0050D6F7 /* ShellScript */,
 				A01F3D701845FA5A003D8D62 /* Sources */,
 				A01F3D711845FA5A003D8D62 /* Frameworks */,
 				A01F3D721845FA5A003D8D62 /* Resources */,
 				A053E8D81A2480C300A30C49 /* Embed Frameworks */,
+				DE634BA42BB8E7DB88137E24 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -336,7 +350,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ ! -d \"$PROJECT_DIR/CraftARSDK_Examples/ExternalFrameworks/CraftARSDK.framework\" ]; then\n    echo \"error: Missing CraftARSDK files in CraftARSDK_Examples/ExternalFrameworks/\" 1>&2;\n    osascript $PROJECT_DIR/CraftARSDK_Examples/scripts/launch_sdk_download \"$PROJECT_DIR\" &\n    exit 1\nfi\n\nif [ ! -d \"$PROJECT_DIR/CraftARSDK_Examples/ExternalFrameworks/Pods.framework\" ]; then\n    echo \"error: Missing CatchoomSDK files in CraftARSDK_Examples/ExternalFrameworks/\" 1>&2;\n    osascript $PROJECT_DIR/CraftARSDK_Examples/scripts/launch_sdk_download \"$PROJECT_DIR\" &\n    exit 1\nfi\n\nif [ ! -d \"$PROJECT_DIR/CraftARSDK_Examples/ExternalFrameworks/CraftARSDK.bundle\" ]; then\n    echo \"error: Missing CraftARSDK files in CraftARSDK_Examples/ExternalFrameworks/\" 1>&2;\n    osascript $PROJECT_DIR/CraftARSDK_Examples/scripts/launch_sdk_download \"$PROJECT_DIR\" &\n    exit 1\nfi\n";
+			shellScript = "if [ ! -d \"$PROJECT_DIR/CraftARSDK_Examples/ExternalFrameworks/CraftARSDK.framework\" ]; then\n    echo \"error: Missing CraftARSDK files in CraftARSDK_Examples/ExternalFrameworks/\" 1>&2;\n    osascript $PROJECT_DIR/CraftARSDK_Examples/scripts/launch_sdk_download \"$PROJECT_DIR\" &\n    exit 1\nfi\n\nif [ ! -d \"$PROJECT_DIR/CraftARSDK_Examples/ExternalFrameworks/CraftARSDK.bundle\" ]; then\n    echo \"error: Missing CraftARSDK files in CraftARSDK_Examples/ExternalFrameworks/\" 1>&2;\n    osascript $PROJECT_DIR/CraftARSDK_Examples/scripts/launch_sdk_download \"$PROJECT_DIR\" &\n    exit 1\nfi\n";
+		};
+		A4DD04862531702E660332C8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DE634BA42BB8E7DB88137E24 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -442,6 +486,7 @@
 		};
 		A01F3DA11845FA5B003D8D62 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F52B503DCA3CC907429AA8C /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = (
 					"$(ARCHS_STANDARD)",
@@ -473,6 +518,7 @@
 		};
 		A01F3DA21845FA5B003D8D62 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6443FFE8D50C4B8B4C499E6D /* Pods.release.xcconfig */;
 			buildSettings = {
 				ARCHS = (
 					"$(ARCHS_STANDARD)",
