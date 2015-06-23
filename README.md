@@ -48,7 +48,7 @@ This example works with the Catchoom SDK version 2.3. If you have an earlier ver
  
 #### Advanced configuration
 
-The Pods.framework provided with the SDK, contains the Pods dependencies used in the CraftARSDK. If you are using cocoa pods in your project, you can remove the framework and add the dependencies to your *Podfile* this is how ours looks like:
+The Pods.framework provided with the SDK, contains the Pods dependencies used in the CraftARSDK. If you are using cocoapods in your project, you can remove the framework and add the dependencies to your *Podfile* this is how ours looks like:
 
 ```
 workspace 'catchoom-sdk-workspace'
